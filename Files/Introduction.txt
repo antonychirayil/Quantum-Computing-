@@ -1,0 +1,321 @@
+Quantum computers are completely new and an entirely different kind of computer quantum mechanics refers to the behavior of the most basic parts of our world the
+fundamental elementary particles that make up the universe these elementary
+particles do not act in the same way the world around us does they have totally
+different properties sometimes the particles can react in totally
+unpredictable ways even popping in and out of existence if we take these
+properties out of the quantum world and enlarge them to work in our classical
+world we can take advantage of them. 
+
+conventional computers work through transistors a transistor can be in two different states on or off 1 or 0 these numbers are known as binary digits or bits these transistors react from input the output goes through logic gates until the final result is outputted and
+you see what's on your screen
+
+quantum computers work by taking the properties of quantum mechanics and applying them
+to computers instead of using a transistor to compute data quantum computers use quantum objects as a special kind of transistor known as a quantum binary digit or qubit the
+quantum object use can be a number of different fundamental particles the only
+requirement is that the quantum object
+behaves in the laws of quantum mechanics
+this is the reason why quantum computers
+are so different compared to classical
+computers it competes using the special
+and strange properties of the quantum
+world the first strange property of
+quantum mechanics is superposition
+superposition is a very odd quantum
+phenomenon in which an object is in more
+than one state at once 
+
+if you flip the
+
+coin there are two possible outcomes
+
+heads or tails before the coin lands we
+
+don't know if it's going to be head
+
+details so simply in the quantum world
+
+it would be both once it lands and we
+
+observe it it will be one of the other
+
+but before that it is in multiple states
+
+a superposition
+
+quantum objects behave in almost the
+
+same way as a flipped coin one of the
+
+fundamental particles that can be used
+
+as a qubit is an electron one of the
+
+properties of an electron is their spin
+
+the electron isn't really spinning but
+
+rather describes its rotation along a
+
+magnetic field think of an electron like
+
+a compass needle the compass will always
+
+point north but if you were to turn 
+
+exactly  degrees it would stay like
+
+that electrons behave in a similar way
+
+electrons always point in the direction
+
+of the magnetic field that is the
+
+sitting position or spin down but if you
+
+were to turn it exactly  degrees it
+
+would have a spin up this property can
+
+be used as a qubit because it can be in
+
+a superposition the difference between
+
+coins compasses and electrons is coins
+
+and compasses aren't quantum objects and
+
+they don't behave in a true quantum way
+
+real quantum objects changes we observe
+
+them the outcome changes because they're
+
+forced to make a decision before we
+
+measure an electron in a superposition
+
+it hasn't decided whether it's up or
+
+down it has a certain percentage of
+
+being both but because we can't measure
+
+something that's in a superposition we
+
+won't know what that percentage is it's
+
+like if you had a coin flat on a table
+
+and when you look at it it decided
+
+whether it's heads or tails
+
+ the real
+
+purpose of quantum computers comes in
+
+the increase in computing power with one
+
+regular bit we have two possible states
+
+ or  when we have two regular bits
+
+there are four possible states     
+
+ and   the computer only outputs one
+
+of those variants when we have two
+
+qubits they're the same possible state
+
+but with super positions each qubit can
+
+be in a combination of both the  and 
+
+state this causes quantum computers to
+
+be much more powerful than classical
+
+computers this means only  bits a
+
+classical computer will output  bits of
+
+information with two qubits because they
+
+can simultaneously be in the  and 
+
+state it will contain  bits of
+
+information
+
+therefore when more qubits are added it
+
+will output to ^ number of qubits bits
+
+of information because of the power of
+
+Exponential's this means even a simple
+
+quantum computer can be more powerful
+
+than our current supercomputers but
+
+there's a big problem using super
+
+positions in computing while qubits can
+
+compute data in multiple states at once
+
+only one of those states can be observed
+
+this means that a quantum computer can
+
+compute many different things at once
+
+but only one of those things can be
+
+outputted this means the computer will
+
+choose the best variant output what
+
+superposition allows us to do is have a
+
+qubit in multiple states at once so
+
+you're doing computation of kicking a
+
+soccer ball into a net let's say the
+
+only variable is the Y position on the
+
+ball and it can be  in centimeters to
+
+ centimeters with a regular computer
+
+we would have to do one computation at 
+
+centimeters then you another at 
+
+centimeter and so on one at a time we
+
+would have to try the algorithm with
+
+every possible position the ball could
+
+be in with a quantum computer the qubits
+
+could exist in every position from  to
+
+ and then once the quantum computer
+
+finds a position where the ball would
+
+make it into the net you would output
+
+the position of the ball a quantum
+
+computer can have qubits that exist in
+
+every possible state and then they can
+
+output the best answer superposition is
+
+only one of the many strange properties
+
+of quantum mechanics one of the more
+
+bizarre parts the quantum world is
+
+entanglement entanglement is a property
+
+where two particles they have exactly
+
+the opposite if two particles are
+
+entangled and one it's changed in some
+
+way the other will react the exact
+
+opposite way this action of being
+
+different than the other particle is
+
+done instantly faster than anything else
+
+in the world even like it gets even more
+
+amazing when you observe the distance
+
+that particles can be entangled two
+
+particles could be on opposite ends of
+
+the universe and still become opposite
+
+instantly
+
+this property is so strange Einstein
+
+described it as spooky motion at a
+
+distance because he couldn't figure out
+
+how it worked and even denied it existed
+
+it is really spooky objects in our
+
+everyday life don't follow these rules
+
+an apple doesn't flip upside down
+
+because it doesn't want to be like
+
+another Apple entanglement can be
+
+thought of like two coins in
+
+superpositions if the two coins are
+
+spinning and the first one lands on
+
+heads you instantly know the second one
+
+is going to be tails
+
+even if you don't look at it the problem
+
+with quantum computing lies in
+
+engineering one quantum computing is all
+
+about taking the microscopic world and
+
+getting it to control our macroscopic
+
+world the microscopic world is very
+
+finicky this hard to control and it is
+
+almost impossible to predict but if we
+
+can harness power the quantum world
+
+quantum computers will truly change the
+
+future allowing us to do things that
+
+would never be possible with classical
+
+computers the strange properties of
+
+these specialty computers will open up a
+
+whole new world of computing quantum
+
+computers are very subtle and very
+
+complex machines and we still have a lot
+
+to learn about them
+
+you 

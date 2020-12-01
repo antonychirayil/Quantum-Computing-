@@ -1,0 +1,1951 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!-- saved from url=(0052)http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Components of a Quantum Computer</title>
+<meta name="description" content="Components of a Quantum Computer">
+<meta name="keywords" content="quprog">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+
+
+<meta name="Generator" content="LaTeX2HTML v99.2beta8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<link rel="STYLESHEET" href="./Components of a Quantum Computer_files/quprog.css">
+
+<link rel="next" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node9.html">
+<link rel="previous" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node7.html">
+<link rel="up" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node6.html">
+<link rel="next" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node9.html">
+</head>
+
+<body>
+<!--Navigation Panel-->
+<a name="tex2html522" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node9.html">
+<img width="37" height="24" align="BOTTOM" border="0" alt="next" src="./Components of a Quantum Computer_files/next.png"></a> 
+<a name="tex2html518" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node6.html">
+<img width="26" height="24" align="BOTTOM" border="0" alt="up" src="./Components of a Quantum Computer_files/up.png"></a> 
+<a name="tex2html512" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node7.html">
+<img width="63" height="24" align="BOTTOM" border="0" alt="previous" src="./Components of a Quantum Computer_files/prev.png"></a> 
+<a name="tex2html520" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node1.html">
+<img width="65" height="24" align="BOTTOM" border="0" alt="contents" src="./Components of a Quantum Computer_files/contents.png"></a>  
+<br>
+<b> Next:</b> <a name="tex2html523" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node9.html">Models of Quantum Computation</a>
+<b> Up:</b> <a name="tex2html519" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node6.html">Quantum Computers</a>
+<b> Previous:</b> <a name="tex2html513" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node7.html">Introduction</a>
+ &nbsp; <b>  <a name="tex2html521" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node1.html">Contents</a></b> 
+<br>
+<br>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<a name="CHILD_LINKS"><strong>Subsections</strong></a>
+
+<ul>
+<li><a name="tex2html524" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#SECTION00321000000000000000">Quantum Memory</a>
+<ul>
+<li><a name="tex2html525" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#SECTION00321100000000000000">The Qubit</a>
+</li><li><a name="tex2html526" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#SECTION00321200000000000000">Combination of Qubits</a>
+</li><li><a name="tex2html527" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#SECTION00321300000000000000">Machine State</a>
+</li><li><a name="tex2html528" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#SECTION00321400000000000000">Subsystems</a>
+</li><li><a name="tex2html529" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#SECTION00321500000000000000">Quantum Registers</a>
+<ul>
+<li><a name="tex2html530" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#SECTION00321510000000000000">Reordering Operators</a>
+</li><li><a name="tex2html531" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#SECTION00321520000000000000">Unitary Operators</a>
+</li><li><a name="tex2html532" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#SECTION00321530000000000000">Register Observables</a>
+</li></ul>
+</li></ul>
+</li><li><a name="tex2html533" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#SECTION00322000000000000000">Processing Units</a>
+<ul>
+<li><a name="tex2html534" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#SECTION00322100000000000000">Unitary Operators</a>
+</li><li><a name="tex2html535" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#SECTION00322200000000000000">Register Operators</a>
+</li><li><a name="tex2html536" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#SECTION00322300000000000000">Universal Quantum Gates</a>
+</li><li><a name="tex2html537" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#SECTION00322400000000000000">Pseudo-classic Operators</a>
+</li><li><a name="tex2html538" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#SECTION00322500000000000000">Quantum Functions</a>
+</li><li><a name="tex2html539" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#SECTION00322600000000000000">Conditional Operators</a>
+</li></ul>
+</li><li><a name="tex2html540" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#SECTION00323000000000000000">Input and Output</a>
+<ul>
+<li><a name="tex2html541" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#SECTION00323100000000000000">Quantum Computing and Information Processing</a>
+</li><li><a name="tex2html542" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#SECTION00323200000000000000">Labeling of States</a>
+</li><li><a name="tex2html543" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#SECTION00323300000000000000">Initialization</a>
+</li><li><a name="tex2html544" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#SECTION00323400000000000000">Measurement</a>
+</li><li><a name="tex2html545" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#SECTION00323500000000000000">Partial Measurement</a>
+</li></ul></li></ul>
+<!--End of Table of Child-Links-->
+<hr>
+
+<h1><a name="SECTION00320000000000000000"></a><a name="qc-components"></a>
+<br>
+Components of a Quantum Computer
+</h1>
+
+<p>
+A classical, as well as a quantum computer, essentially consists
+of 3 parts: a memory, which holds the current machine state,
+a processor, which performs elementary operations on the machine
+state, and some sort of input/output which allows to set the
+initial state and extract the final state of the computation.
+
+</p><p>
+
+</p><h2><a name="SECTION00321000000000000000">
+Quantum Memory</a>
+</h2>
+
+<p>
+
+</p><h3><a name="SECTION00321100000000000000">
+The Qubit</a>
+</h3>
+
+<p>
+The quantum analogy to the classical bit is the quantum bit
+or <i>qubit</i>. 
+Just as a classical bit is represented by a system which 
+can adopt one of two distinct states ``0'' and ``1'' we
+can define a quantum bit as follows:
+
+</p><p>
+</p><p>
+</p><div><b>Definition  1</b> (Qubit)  &nbsp; 
+A qubit or quantum bit is a quantum system whose state can be
+fully described by a superposition of two orthonormal
+eigenstates labeled <img width="27" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img287.gif" alt="${\vert \rangle}$"> and <img width="27" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img288.gif" alt="${\vert 1 \rangle}$">.</div><p></p>
+
+<p>
+The general state <!-- MATH
+ ${|\psi \rangle}\in\mathcal{H}$
+ -->
+<img width="70" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img289.gif" alt="${\vert\psi \rangle}\in\mathcal{H}$"> of a qubit is given by
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+{|\psi \rangle}=\alpha {|0 \rangle}+\beta {|1 \rangle}
+\quad\mathrm{with}\quad |\alpha|^2+|\beta|^2=1
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="329" height="33" border="0" src="./Components of a Quantum Computer_files/img290.gif" alt="\begin{displaymath}
+{\vert\psi \rangle}=\alpha {\vert \rangle}+\beta {\vert 1 \r...
+...\quad\mathrm{with}\quad \vert\alpha\vert^2+\vert\beta\vert^2=1
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.2)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+The value of a qubit is the observable <img width="23" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img291.gif" alt="$\mathcal{N}$"> with the
+Hermitian operator <!-- MATH
+ $N\,{|i \rangle}=i\,{|i \rangle}$
+ -->
+<img width="98" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img292.gif" alt="$N {\vert i \rangle}=i {\vert i \rangle}$"> over the
+Hilbert space <!-- MATH
+ $\mathcal{H}=\mathbf{C}^2$
+ -->
+<img width="69" height="20" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img293.gif" alt="$\mathcal{H}=\mathbf{C}^2$">, or in matrix 
+representation
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+N=
+  \left(\begin{array}{cc}
+  0 & 0 \\0 & 1
+  \end{array}\right)
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="114" height="54" border="0" src="./Components of a Quantum Computer_files/img294.gif" alt="\begin{displaymath}
+N=
+\left(\begin{array}{cc}
+0 &amp; 0  0 &amp; 1
+\end{array}\right)\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.3)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+The expectation value of <img width="22" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img76.gif" alt="$N$"> is given by
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+{\langle N \rangle}={\langle \psi|}N{|\psi \rangle}=
+  
+  \left(\begin{array}{cc}
+  {\alpha}^* & {\beta}^*
+  \end{array}\right)
+  
+  \left(\begin{array}{cc}
+  0 & 0 \\0 & 1
+  \end{array}\right)
+
+  
+  \left(\begin{array}{c}
+  \alpha \\\beta
+  \end{array}\right)
+=|\beta|^2
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="348" height="164" border="0" src="./Components of a Quantum Computer_files/img295.gif" alt="\begin{displaymath}
+{\langle N \rangle}={\langle \psi\vert}N{\vert\psi \rangle}...
+...ay}{c}
+\alpha  \beta
+\end{array}\right)
+=\vert\beta\vert^2
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.4)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+thus, <!-- MATH
+ ${\langle N \rangle}$
+ -->
+<img width="37" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img296.gif" alt="${\langle N \rangle}$"> gives the probability to find the system in
+state <img width="27" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img288.gif" alt="${\vert 1 \rangle}$"> if a measurement is performed on the qubit.
+
+<p>
+
+</p><h3><a name="SECTION00321200000000000000">
+Combination of Qubits</a>
+</h3>
+
+<p>
+If we combine 2 qubits, the general state of the resulting system 
+is
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+{|\Psi \rangle}=\alpha {|00 \rangle}+\beta {|10 \rangle}+
+\gamma {|01 \rangle}+\delta {|11 \rangle}
+\quad\mathrm{with}\quad |\alpha|^2+|\beta|^2+|\gamma|^2+|\delta|^2=1
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="553" height="33" border="0" src="./Components of a Quantum Computer_files/img297.gif" alt="\begin{displaymath}
+{\vert\Psi \rangle}=\alpha {\vert0 \rangle}+\beta {\vert 10 ...
+...rt^2+\vert\beta\vert^2+\vert\gamma\vert^2+\vert\delta\vert^2=1
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.5)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+While we still can define distinct observables <!-- MATH
+ $\mathcal{N}^{(1)}$
+ -->
+<img width="41" height="21" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img298.gif" alt="$\mathcal{N}^{(1)}$"> 
+and <!-- MATH
+ $\mathcal{N}^{(2)}$
+ -->
+<img width="41" height="21" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img299.gif" alt="$\mathcal{N}^{(2)}$"> for the value of each qubit with the
+operators <!-- MATH
+ $N^{(1)}\,{|ij \rangle}=i\,{|ij \rangle}$
+ -->
+<img width="133" height="41" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img300.gif" alt="$N^{(1)} {\vert ij \rangle}=i {\vert ij \rangle}$"> and 
+<!-- MATH
+ $N^{(2)}\,{|ij \rangle}=j\,{|ij \rangle}$
+ -->
+<img width="136" height="41" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img301.gif" alt="$N^{(2)} {\vert ij \rangle}=j {\vert ij \rangle}$">, their expectation values
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+{\langle N^{(1)} \rangle}=|\beta|^2+|\delta|^2
+\quad\mathrm{and}\quad {\langle N^{(2)} \rangle}=|\gamma|^2+|\delta|^2
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="374" height="33" border="0" src="./Components of a Quantum Computer_files/img302.gif" alt="\begin{displaymath}
+{\langle N^{(1)} \rangle}=\vert\beta\vert^2+\vert\delta\vert...
+...\langle N^{(2)} \rangle}=\vert\gamma\vert^2+\vert\delta\vert^2
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.6)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+don't allow us to reconstruct the actual probability distribution 
+among the eigenvalues. 
+To illustrate this, consider the states
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+{|\Psi_A \rangle}=\frac{1}{\sqrt{2}}({|00 \rangle}+{|11 \rangle}),\quad
+  {|\Psi_B \rangle}=\frac{1}{\sqrt{2}}({|10 \rangle}+{|01 \rangle})
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="411" height="49" border="0" src="./Components of a Quantum Computer_files/img303.gif" alt="\begin{displaymath}
+{\vert\Psi_A \rangle}=\frac{1}{\sqrt{2}}({\vert0 \rangle}+{...
+...angle}=\frac{1}{\sqrt{2}}({\vert 10 \rangle}+{\vert1 \rangle})
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.7)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+<br><p></p>
+<div align="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\quad\mathrm{and}\quad 
+  {|\Psi_C \rangle}=\frac{1}{2}({|00 \rangle}+{|10 \rangle}+{|01 \rangle}+{|11 \rangle})
+\end{displaymath}
+ -->
+
+<img width="334" height="45" border="0" src="./Components of a Quantum Computer_files/img304.gif" alt="\begin{displaymath}\quad\mathrm{and}\quad
+{\vert\Psi_C \rangle}=\frac{1}{2}({\...
+...angle}+{\vert 10 \rangle}+{\vert1 \rangle}+{\vert 11 \rangle})
+\end{displaymath}">
+</div>
+<br clear="ALL">
+<p></p>
+All of these states have the expectation values
+<!-- MATH
+ ${\langle N^{(1)} \rangle}={\langle N^{(2)} \rangle}=1/2$
+ -->
+<img width="183" height="41" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img305.gif" alt="${\langle N^{(1)} \rangle}={\langle N^{(2)} \rangle}=1/2$">, i.e. if we measure a
+single qubit, we get either <img width="27" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img287.gif" alt="${\vert \rangle}$"> or <img width="27" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img288.gif" alt="${\vert 1 \rangle}$"> with equal
+probability; we get, however, totally different post-measurement
+states. 
+
+<p>
+If we measure <img width="27" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img288.gif" alt="${\vert 1 \rangle}$"> in the first qubit, the resulting 
+post-measurement states are
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+{|\Psi_A' \rangle}={|11 \rangle}, \quad  {|\Psi_B' \rangle}={|10 \rangle}
+  \quad\mathrm{and}\quad {|\Psi_C' \rangle}=\frac{1}{\sqrt{2}}({|10 \rangle}+{|11 \rangle})
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="475" height="49" border="0" src="./Components of a Quantum Computer_files/img306.gif" alt="\begin{displaymath}
+{\vert\Psi_A&#39; \rangle}={\vert 11 \rangle}, \quad {\vert\Psi...
+...gle}=\frac{1}{\sqrt{2}}({\vert 10 \rangle}+{\vert 11 \rangle})
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.8)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+and the expectation values for the second qubit are now 
+given by
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+{\langle N^{(2)}_A \rangle}=1, \quad
+  {\langle N^{(2)}_B \rangle}=0 \quad\mathrm{and}\quad 
+  {\langle N^{(2)}_C \rangle}=\frac{1}{2}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="350" height="45" border="0" src="./Components of a Quantum Computer_files/img307.gif" alt="\begin{displaymath}
+{\langle N^{(2)}_A \rangle}=1, \quad
+{\langle N^{(2)}_B \r...
+...uad\mathrm{and}\quad
+{\langle N^{(2)}_C \rangle}=\frac{1}{2}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.9)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+
+<p>
+
+</p><h3><a name="SECTION00321300000000000000"></a><a name="qc-machstate"></a>
+<br>
+Machine State
+</h3>
+
+<p>
+While the state of a classical computer can be given as the 
+distinct states of all bits in memory and processor registers,
+the ``state of a qubit'' is a meaningless term, if the 
+machine state is the combined state of more than one system.<a name="tex2html17" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#foot4284"><sup>2.3</sup></a>
+</p><p>
+</p><p>
+</p><div><b>Definition  2</b> (Machine State)  &nbsp; 
+The machine state <img width="19" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img308.gif" alt="$\Psi$"> of an <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$">-qubit quantum computer is the 
+current state of a combined system of <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$"> identical qubit subsystems.</div><p></p>
+
+<p>
+Generally, the machine state <img width="19" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img308.gif" alt="$\Psi$"> of an <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$">-qubit quantum 
+computer is given by
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+{|\Psi \rangle}=\sum_{(d_0\ldots d_{n-1})\in \mathbf{B}^n}
+  c_{d_0\ldots d_{n-1}} {|d_0\ldots d_{n-1} \rangle}
+  \quad\mathrm{with}\quad \sum 
+  |c_{d_0\ldots d_{n-1}}|^2=1
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="523" height="53" border="0" src="./Components of a Quantum Computer_files/img309.gif" alt="\begin{displaymath}
+{\vert\Psi \rangle}=\sum_{(d_0\ldots d_{n-1})\in \mathbf{B}...
+...\mathrm{with}\quad \sum
+\vert c_{d_0\ldots d_{n-1}}\vert^2=1
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.10)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+The combined Hilbert space <img width="21" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img106.gif" alt="$\mathcal{H}$"> is thus a composition of <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$">
+1-qubit-Hilbert spaces <!-- MATH
+ $\mathcal{H}_i=\mathbf{C}^2$
+ -->
+<img width="75" height="38" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img310.gif" alt="$\mathcal{H}_i=\mathbf{C}^2$">, i.e.
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mathcal{H}=\mathcal{H}_1\times\mathcal{H}_2\times\ldots\times\mathcal{H}_n=
+\mathbf{C}^{2^n}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="260" height="31" border="0" src="./Components of a Quantum Computer_files/img311.gif" alt="\begin{displaymath}
+\mathcal{H}=\mathcal{H}_1\times\mathcal{H}_2\times\ldots\times\mathcal{H}_n=
+\mathbf{C}^{2^n}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.11)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+If we interpret the eigenvectors <!-- MATH
+ ${|d_0\ldots d_{n-1} \rangle}$
+ -->
+<img width="99" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img312.gif" alt="${\vert d_0\ldots d_{n-1} \rangle}$"> as
+binary digits, with <img width="22" height="34" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img313.gif" alt="$d_0$"> as least significant bit, we 
+can write this as
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+{|\Psi \rangle}=\sum_{i=0}^{2^n-1}c_i {|i \rangle}
+\quad\mathrm{with}\quad {|d_0+2d_1+\ldots+2^{n-1}d_{n-1} \rangle}\equiv
+{|d_0\ldots d_{n-1} \rangle}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="529" height="58" border="0" src="./Components of a Quantum Computer_files/img314.gif" alt="\begin{displaymath}
+{\vert\Psi \rangle}=\sum_{i=0}^{2^n-1}c_i {\vert i \rangle}
+...
+...{n-1}d_{n-1} \rangle}\equiv
+{\vert d_0\ldots d_{n-1} \rangle}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.12)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+The operator <img width="25" height="34" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img315.gif" alt="$N_i$"> for value <img width="26" height="34" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img316.gif" alt="$\mathcal{N}_i$"> of the <img width="11" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img317.gif" alt="$i$">-th qubit 
+is given by
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+N_i\,{|d_0\ldots d_{n-1} \rangle}=d_i\,{|d_0\ldots d_{n-1} \rangle}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="255" height="33" border="0" src="./Components of a Quantum Computer_files/img318.gif" alt="\begin{displaymath}
+N_i {\vert d_0\ldots d_{n-1} \rangle}=d_i {\vert d_0\ldots d_{n-1} \rangle}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.13)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+and has the expectation value
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+{\langle N_i \rangle}=\sum_{(d_0\ldots d_{n-1})\in \mathbf{B}^n}
+  d_i |c_{d_0\ldots d_{n-1}}|^2
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="252" height="53" border="0" src="./Components of a Quantum Computer_files/img319.gif" alt="\begin{displaymath}
+{\langle N_i \rangle}=\sum_{(d_0\ldots d_{n-1})\in \mathbf{B}^n}
+d_i \vert c_{d_0\ldots d_{n-1}}\vert^2
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.14)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+
+<p>
+
+</p><h3><a name="SECTION00321400000000000000"></a><a name="qc-subs"></a>
+<br>
+Subsystems
+</h3>
+
+<p>
+As we have shown above, the memory of an <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$">-qubit quantum computer
+is a combined system of <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$"> identical qubit-subsystems.
+Since the partition into subsystems is merely methodical, we can
+consider the first <img width="21" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img254.gif" alt="$m$"> qubits (<img width="57" height="33" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img320.gif" alt="$m&lt;n$">) as a single subsystem
+and write <img width="19" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img308.gif" alt="$\Psi$"> as
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+{|\Psi \rangle}=\sum_{i=0}^{2^m-1}\sum_{j=0}^{2^{n-m}-1} c_{ij}
+  {|i,j \rangle}\quad\mathrm{with}\quad {|\Psi \rangle}\in\mathcal{H}=\mathbf{C}^{2^n}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="395" height="63" border="0" src="./Components of a Quantum Computer_files/img321.gif" alt="\begin{displaymath}
+{\vert\Psi \rangle}=\sum_{i=0}^{2^m-1}\sum_{j=0}^{2^{n-m}-1...
+...{with}\quad {\vert\Psi \rangle}\in\mathcal{H}=\mathbf{C}^{2^n}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.15)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+As the base vectors <!-- MATH
+ ${|i,j \rangle}$
+ -->
+<img width="41" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img322.gif" alt="${\vert i,j \rangle}$"> are product states
+<!-- MATH
+ ${|i,j \rangle}={|i \rangle}{|j \rangle}$
+ -->
+<img width="107" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img323.gif" alt="${\vert i,j \rangle}={\vert i \rangle}{\vert j \rangle}$">, the Hilbert space <img width="21" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img106.gif" alt="$\mathcal{H}$"> can
+be written as a combination of
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mathcal{H}=\mathcal{H}'\times\mathcal{H}''\quad\mathrm{with}\quad 
+\mathcal{H}'=\mathbf{C}^{2^m}\quad\mathrm{and}\quad \mathcal{H}''=\mathbf{C}^{2^{n-m}}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="430" height="30" border="0" src="./Components of a Quantum Computer_files/img324.gif" alt="\begin{displaymath}
+\mathcal{H}=\mathcal{H}&#39;\times\mathcal{H}&#39;&#39;\quad\mathrm{with...
+...{2^m}\quad\mathrm{and}\quad \mathcal{H}&#39;&#39;=\mathbf{C}^{2^{n-m}}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.16)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+Let <img width="24" height="19" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img325.gif" alt="$U&#39;$"> and <img width="28" height="19" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img326.gif" alt="$U&#39;&#39;$"> be unitary operators over <img width="26" height="19" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img327.gif" alt="$\mathcal{H}&#39;$"> and
+<img width="29" height="19" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img328.gif" alt="$\mathcal{H}&#39;&#39;$">, then the commutator <img width="100" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img329.gif" alt="$[U&#39;,U&#39;&#39;]=0$"> as
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+[U',U'']\,{|\Psi \rangle}=
+  \sum_{i,j} c_{ij} 
+  \left[U'{|i \rangle} (U''{|j \rangle})-U''(U'{|i \rangle}){|j \rangle}\right]=0
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><a name="qc-subsu"></a><img width="427" height="51" border="0" src="./Components of a Quantum Computer_files/img330.gif" alt="\begin{displaymath}[U&#39;,U&#39;&#39;] {\vert\Psi \rangle}=
+\sum_{i,j} c_{ij}
+\left[U&#39;{...
+... \rangle})-U&#39;&#39;(U&#39;{\vert i \rangle}){\vert j \rangle}\right]=0
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.17)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+This means that unitary transformations applied to distinct
+subsets of qubits are independent.
+
+<p>
+A unitary transformation <img width="24" height="19" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img325.gif" alt="$U&#39;$"> over the first <img width="21" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img254.gif" alt="$m$"> qubits also
+doesn't affect a measurement of the remaining qubits since
+the probability <img width="22" height="36" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img331.gif" alt="$p_j&#39;&#39;$"> to measure <img width="14" height="33" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img332.gif" alt="$j$"> in the remaining 
+<img width="56" height="33" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img333.gif" alt="$n-m$"> qubits, i.e. to get a post-measurement state of the
+form <!-- MATH
+ ${|\Psi' \rangle}={|\psi_j \rangle}{|j \rangle}$
+ -->
+<img width="115" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img334.gif" alt="${\vert\Psi&#39; \rangle}={\vert\psi_j \rangle}{\vert j \rangle}$">, is invariant to
+<img width="24" height="19" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img325.gif" alt="$U&#39;$">, as
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+p_j''=\sum_i {c}^*_{ij}c_{ij} {\langle i|i \rangle}{\langle j|j \rangle}=
+  \sum_i {c}^*_{ij}c_{ij} 
+  {\langle i|}{U'}^\dagger U'{|i \rangle}{\langle j|j \rangle}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><a name="qc-susbp"></a><img width="390" height="49" border="0" src="./Components of a Quantum Computer_files/img335.gif" alt="\begin{displaymath}
+p_j&#39;&#39;=\sum_i {c}^*_{ij}c_{ij} {\langle i\vert i \rangle}{\l...
+...ert}{U&#39;}^\dagger U&#39;{\vert i \rangle}{\langle j\vert j \rangle}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.18)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+
+<p>
+
+</p><h3><a name="SECTION00321500000000000000"></a><a name="qc-qreg"></a>
+<br>
+Quantum Registers
+</h3>
+
+<p>
+The above notion of <img width="21" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img254.gif" alt="$m$">-qubit subsystems can easily be extended 
+to arbitrary sequences of qubits.
+
+</p><p>
+</p><p>
+</p><div><b>Definition  3</b> (Quantum Register)  &nbsp; 
+An <img width="21" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img254.gif" alt="$m$"> qubit quantum Register <img width="13" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img336.gif" alt="$\mathbf{s}$"> is a sequence of
+mutually different zero-based qubit positions
+<!-- MATH
+ ${\langle s_0, s_1 \ldots s_{m-1} \rangle}$
+ -->
+<img width="128" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img337.gif" alt="${\langle s_0, s_1 \ldots s_{m-1} \rangle}$"> of some machine state 
+<!-- MATH
+ ${|\Psi \rangle}\in\mathbf{C}^{2^m}$
+ -->
+<img width="90" height="39" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img338.gif" alt="${\vert\Psi \rangle}\in\mathbf{C}^{2^m}$"> with <img width="58" height="33" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img339.gif" alt="$n\geq m$">.</div><p></p>
+
+<p>
+
+</p><h4><a name="SECTION00321510000000000000">
+Reordering Operators</a>
+</h4>
+
+<p>
+Let <img width="13" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img336.gif" alt="$\mathbf{s}$"> be an <img width="21" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img254.gif" alt="$m$"> qubit register of the <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$"> qubit state 
+<!-- MATH
+ ${|\Psi \rangle}$
+ -->
+<img width="32" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img241.gif" alt="${\vert\Psi \rangle}$">.
+Using an arbitrary permutation <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img340.gif" alt="$\pi$"> over <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$"> elements with
+<img width="60" height="33" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img341.gif" alt="$\pi_i=s_i$"> for <img width="53" height="33" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img342.gif" alt="$i&lt;m$">, we can construct a unitary 
+<i>reordering operator</i> <!-- MATH
+ $\Pi_{\mathbf{s}}$
+ -->
+<img width="26" height="34" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img343.gif" alt="$\Pi_{\mathbf{s}}$"> by permutating the qubits.
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\Pi_{\mathbf{s}}\,{|d_0,d_1\ldots d_{n-1} \rangle}=
+  {|d_{\pi_0},d_{\pi_1}\ldots d_{\pi_{n-1}} \rangle}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="309" height="34" border="0" src="./Components of a Quantum Computer_files/img344.gif" alt="\begin{displaymath}
+\Pi_{\mathbf{s}} {\vert d_0,d_1\ldots d_{n-1} \rangle}=
+{\vert d_{\pi_0},d_{\pi_1}\ldots d_{\pi_{n-1}} \rangle}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.19)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+Note that there exist <img width="75" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img345.gif" alt="$(n-m)!$"> permutations <!-- MATH
+ $\Pi_{\mathbf{s}}^{(k)}$
+ -->
+<img width="37" height="41" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img346.gif" alt="$\Pi_{\mathbf{s}}^{(k)}$">
+which fit into the above definition, since <img width="21" height="33" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img347.gif" alt="$\pi_i$"> is only 
+defined for <img width="53" height="33" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img342.gif" alt="$i&lt;m$">.
+
+<p>
+Unitary operators correspond to base transformations (see
+<a href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node5.html#qi-unitary">1.3.2.6</a>), so we can write 
+<!-- MATH
+ ${|\tilde{\Psi} \rangle}=\Pi_{\mathbf{s}} {|\Psi \rangle}$
+ -->
+<img width="105" height="43" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img348.gif" alt="${\vert\tilde{\Psi} \rangle}=\Pi_{\mathbf{s}} {\vert\Psi \rangle}$"> as
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+{|\tilde{\Psi} \rangle}=
+  \sum_{i=0}^{2^m-1} \sum_{j=0}^{2^{n-m}-1} \tilde{c}_{ij} {|i,j \rangle}
+  \quad\mathrm{with}\quad \tilde{c}_{ij}=c_{\tilde{\imath}\tilde{\jmath}}
+  \quad\mathrm{and}\quad 
+  {|\tilde{\imath},\tilde{\jmath} \rangle}=\Pi_{\mathbf{s}} {|i,j \rangle}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="519" height="63" border="0" src="./Components of a Quantum Computer_files/img349.gif" alt="\begin{displaymath}
+{\vert\tilde{\Psi} \rangle}=
+\sum_{i=0}^{2^m-1} \sum_{j=0}...
+...},\tilde{\jmath} \rangle}=\Pi_{\mathbf{s}} {\vert i,j \rangle}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.20)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+As above, the transformed Hilbert space <!-- MATH
+ $\tilde{\mathcal{H}}$
+ -->
+<img width="21" height="22" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img350.gif" alt="$\tilde{\mathcal{H}}$"> can be
+written as a combination
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\tilde{\mathcal{H}}=\tilde{\mathcal{H}}'\times\tilde{\mathcal{H}}''\quad\mathrm{with}\quad 
+\tilde{\mathcal{H}}'=\mathbf{C}^{2^m}\quad\mathrm{and}\quad \tilde{\mathcal{H}}''=\mathbf{C}^{2^{n-m}}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="430" height="30" border="0" src="./Components of a Quantum Computer_files/img351.gif" alt="\begin{displaymath}
+\tilde{\mathcal{H}}=\tilde{\mathcal{H}}&#39;\times\tilde{\mathca...
+...ad\mathrm{and}\quad \tilde{\mathcal{H}}&#39;&#39;=\mathbf{C}^{2^{n-m}}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.21)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+
+<p>
+
+</p><h4><a name="SECTION00321520000000000000">
+Unitary Operators</a>
+</h4>
+
+<p>
+Let <img width="24" height="22" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img352.gif" alt="$\tilde{U}&#39;$"> be a <img width="21" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img254.gif" alt="$m$">-qubit unitary operator over 
+<!-- MATH
+ $\tilde{\mathcal{H}}'$
+ -->
+<img width="26" height="22" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img353.gif" alt="$\tilde{\mathcal{H}}&#39;$"> and <!-- MATH
+ $\tilde{U}=\tilde{U}'\times I(n-m)$
+ -->
+<img width="162" height="43" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img354.gif" alt="$\tilde{U}=\tilde{U}&#39;\times I(n-m)$"> 
+with <img width="39" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img355.gif" alt="$I(k)$"> being the <img width="15" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img96.gif" alt="$k$">-qubit identity operator.
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\tilde{U}\,{|\tilde{\Psi} \rangle}=
+  \sum_{i,j} \tilde{c}_{ij} (\tilde{U}'{|i \rangle}){|j \rangle}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="188" height="51" border="0" src="./Components of a Quantum Computer_files/img356.gif" alt="\begin{displaymath}
+\tilde{U} {\vert\tilde{\Psi} \rangle}=
+\sum_{i,j} \tilde{c}_{ij} (\tilde{U}&#39;{\vert i \rangle}){\vert j \rangle}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.22)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+For each permutation <!-- MATH
+ $\Pi_{\mathbf{s}}^{(k)}$
+ -->
+<img width="37" height="41" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img346.gif" alt="$\Pi_{\mathbf{s}}^{(k)}$">, we can define a 
+back-transformed operator
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+U^{(k)}={\Pi_{\mathbf{s}}^{(k)}}^\dagger \tilde{U}\,\Pi_{\mathbf{s}}^{(k)}=
+  \sum_{i',j',i,j} {|i',j' \rangle} 
+  \,u^{(k)}_{i'j'ij}\, {\langle i,j|}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="346" height="52" border="0" src="./Components of a Quantum Computer_files/img357.gif" alt="\begin{displaymath}
+U^{(k)}={\Pi_{\mathbf{s}}^{(k)}}^\dagger \tilde{U} \Pi_{\m...
+...\vert i&#39;,j&#39; \rangle}
+ u^{(k)}_{i&#39;j&#39;ij}  {\langle i,j\vert}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.23)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+with the matrix elements
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+u^{(k)}_{i'j'ij}=  
+  {\langle \tilde{\imath}'^{(k)}|}\tilde{U}'{|\tilde{\imath}^{(k)} \rangle}
+  {\langle \tilde{\jmath}'^{(k)}|\tilde{\jmath}^{(k)} \rangle}
+  \quad\mathrm{and}\quad {|\tilde{\imath}^{(k)},\tilde{\jmath}^{(k)} \rangle}=
+  \Pi_{\mathbf{s}}^{(k)} {|i,j \rangle}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="472" height="36" border="0" src="./Components of a Quantum Computer_files/img358.gif" alt="\begin{displaymath}
+u^{(k)}_{i&#39;j&#39;ij}=
+{\langle \tilde{\imath}&#39;^{(k)}\vert}\ti...
+...h}^{(k)} \rangle}=
+\Pi_{\mathbf{s}}^{(k)} {\vert i,j \rangle}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.24)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+Since the transformed base vectors <!-- MATH
+ $\tilde{\imath}^{(k)}$
+ -->
+<img width="29" height="21" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img359.gif" alt="$\tilde{\imath}^{(k)}$"> are 
+identical for all permutations <!-- MATH
+ $\Pi_{\mathbf{s}}^{(k)}$
+ -->
+<img width="37" height="41" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img346.gif" alt="$\Pi_{\mathbf{s}}^{(k)}$"> and
+<!-- MATH
+ ${\langle \tilde{\jmath}'^{(k)}|\tilde{\jmath}^{(k)} \rangle}=\delta_{j'j}$
+ -->
+<img width="131" height="41" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img360.gif" alt="${\langle \tilde{\jmath}&#39;^{(k)}\vert\tilde{\jmath}^{(k)} \rangle}=\delta_{j&#39;j}$">,
+it follows that the back-transformation <!-- MATH
+ $\tilde{U}'\times I\to U$
+ -->
+<img width="101" height="43" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img361.gif" alt="$\tilde{U}&#39;\times I\to U$">
+is independent from the chosen permutation <!-- MATH
+ $\Pi_{\mathbf{s}}^{(k)}$
+ -->
+<img width="37" height="41" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img346.gif" alt="$\Pi_{\mathbf{s}}^{(k)}$">.
+
+<p>
+
+</p><h4><a name="SECTION00321530000000000000">
+Register Observables</a>
+</h4>
+
+<p>
+Just as with single qubits, we can define an observable <img width="18" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img362.gif" alt="$\mathcal{S}$">
+for a given <img width="21" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img254.gif" alt="$m$">-qubit register <img width="13" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img336.gif" alt="$\mathbf{s}$"> with the operator 
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+S=(N_{\pi_0},N_{\pi_1},\ldots N_{\pi_{m-1}})
+  \quad\mathrm{and}\quad 
+  N_i\,{|d_0\ldots d_{n-1} \rangle}=d_i\,{|d_0\ldots d_{n-1} \rangle}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="525" height="34" border="0" src="./Components of a Quantum Computer_files/img363.gif" alt="\begin{displaymath}
+S=(N_{\pi_0},N_{\pi_1},\ldots N_{\pi_{m-1}})
+\quad\mathrm{...
+...\ldots d_{n-1} \rangle}=d_i {\vert d_0\ldots d_{n-1} \rangle}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.25)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+or, if we interpret the binary vectors as integers,
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+S=\sum_{i,j} {\Pi_{\mathbf{s}}}^\dagger \, {|i,j \rangle} i {\langle i,j|}\,\Pi_{\mathbf{s}}=
+  \sum_{i,j} {|i,j \rangle}\tilde{\imath}{\langle i,j|}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="326" height="51" border="0" src="./Components of a Quantum Computer_files/img364.gif" alt="\begin{displaymath}
+S=\sum_{i,j} {\Pi_{\mathbf{s}}}^\dagger   {\vert i,j \rang...
+...\sum_{i,j} {\vert i,j \rangle}\tilde{\imath}{\langle i,j\vert}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.26)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+
+<p>
+
+</p><h2><a name="SECTION00322000000000000000">
+Processing Units</a>
+</h2>
+
+<p>
+
+</p><h3><a name="SECTION00322100000000000000">
+Unitary Operators</a>
+</h3>
+
+<p>
+In a classical <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$">-bit computer, every computational step can
+be described by a transition function <!-- MATH
+ $I: \mathbf{B}^n\to\mathbf{B}^n$
+ -->
+<img width="108" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img365.gif" alt="$I: \mathbf{B}^n\to\mathbf{B}^n$">
+which takes the current state <img width="17" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img366.gif" alt="$S$"> of all bits as input and 
+returns the appropriate post-instruction state <img width="22" height="19" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img367.gif" alt="$S&#39;$">.
+
+</p><p>
+As we have shown in <a href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node5.html#qi-unitary">1.3.2.6</a>, the temporal evolution of a
+quantum system can be described by unitary operators.
+The general form of a <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$">-qubit unitary operator <img width="19" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img210.gif" alt="$U$"> over the
+Hilbert space <!-- MATH
+ $\mathcal{H}=\mathbf{C}^{2^n}$
+ -->
+<img width="77" height="20" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img368.gif" alt="$\mathcal{H}=\mathbf{C}^{2^n}$"> is
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+U=\sum_{i=0}^{2^n-1} \sum_{j=0}^{2^n-1} 
+  {|i \rangle}\,u_{ij}\,{\langle j|}
+  \quad\mathrm{with}\quad \sum_{k=0}^{2^n-1} {u}^*_{ki} u_{kj}=\delta_{ij}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="384" height="61" border="0" src="./Components of a Quantum Computer_files/img369.gif" alt="\begin{displaymath}
+U=\sum_{i=0}^{2^n-1} \sum_{j=0}^{2^n-1}
+{\vert i \rangle}...
+...rm{with}\quad \sum_{k=0}^{2^n-1} {u}^*_{ki} u_{kj}=\delta_{ij}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.27)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+
+<p>
+If we compare boolean functions to unitary operators from a 
+strictly functional point of view we can identify three major
+differences between classical and quantum operations:
+
+</p><p>
+
+</p><ul>
+<li><b>Reversibility:</b> Since unitary operators, by definition,
+match the condition <!-- MATH
+ ${U}^\dagger U=I$
+ -->
+<img width="76" height="20" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img370.gif" alt="${U}^\dagger U=I$">, for every transformation <img width="19" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img210.gif" alt="$U$">
+there exists the inverse transformation <img width="26" height="20" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img371.gif" alt="${U}^\dagger $">.
+As a consequence, quantum computation is restricted to 
+reversible functions.<a name="tex2html18" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#foot1496"><sup>2.4</sup></a>
+<p>
+</p></li>
+<li><b>Superposition:</b> An eigenstate <!-- MATH
+ ${|\Psi \rangle}={|k \rangle}$
+ -->
+<img width="80" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img372.gif" alt="${\vert\Psi \rangle}={\vert k \rangle}$">
+can be transformed into a superposition of eigenstates.
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+{|\Psi' \rangle}=U\,{|k \rangle}=\sum_{k'} U_{k'k} {|k \rangle}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="201" height="50" border="0" src="./Components of a Quantum Computer_files/img373.gif" alt="\begin{displaymath}
+{\vert\Psi&#39; \rangle}=U {\vert k \rangle}=\sum_{k&#39;} U_{k&#39;k} {\vert k \rangle}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.28)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+The mathematical explanation of this feature lies in the fact
+that the requirement <!-- MATH
+ ${\langle i|}{U}^\dagger U{|j \rangle}=\delta_{ij}$
+ -->
+<img width="127" height="39" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img374.gif" alt="${\langle i\vert}{U}^\dagger U{\vert j \rangle}=\delta_{ij}$">
+is weaker than the pseudo-classical (see <a href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#qc-pseudocl">2.2.2.4</a>) 
+condition
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+{\langle i|}{U}^\dagger {|\pi_i \rangle}{\langle \pi_i|\pi_j \rangle}{\langle \pi_j|}U{|j \rangle}=
+  \delta_{ij}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="232" height="34" border="0" src="./Components of a Quantum Computer_files/img375.gif" alt="\begin{displaymath}
+{\langle i\vert}{U}^\dagger {\vert\pi_i \rangle}{\langle \p...
+...j \rangle}{\langle \pi_j\vert}U{\vert j \rangle}=
+\delta_{ij}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.29)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+which requires transformed eigenstates not only to be orthonormal,
+but also to be of the form <!-- MATH
+ $U\,{|k \rangle}={|\pi_k \rangle}$
+ -->
+<img width="102" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img376.gif" alt="$U {\vert k \rangle}={\vert\pi_k \rangle}$"> with some
+appropriate permutation (i.e. reversible function) <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img340.gif" alt="$\pi$"> over 
+<!-- MATH
+ $\mathbf{Z}_{2^n}$
+ -->
+<img width="34" height="34" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img377.gif" alt="$\mathbf{Z}_{2^n}$">.
+</li>
+<li><b>Parallelism:</b> If the machine state <!-- MATH
+ ${|\Psi \rangle}$
+ -->
+<img width="32" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img241.gif" alt="${\vert\Psi \rangle}$">
+already is a superposition of several eigenstates, then
+a transformation <img width="19" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img210.gif" alt="$U$"> is applied to all eigenstates simultaneously.
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+U\,\sum_i c_i {|i \rangle} = \sum_i c_i U {|i \rangle}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="176" height="49" border="0" src="./Components of a Quantum Computer_files/img378.gif" alt="\begin{displaymath}
+U \sum_i c_i {\vert i \rangle} = \sum_i c_i U {\vert i \rangle}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.30)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+This feature of quantum computing is called <i>quantum 
+parallelism</i> and is a consequence of the linearity of
+unitary transformations.
+</li>
+</ul>
+
+<p>
+
+</p><h3><a name="SECTION00322200000000000000"></a><a name="qc-regop"></a>
+<br>
+Register Operators
+</h3>
+
+<p>
+The basic instructions of a classical computer usually operate
+only on a very small number of bits and are typically independent 
+from the total amount of available memory.
+Therefor it is more useful to describe those instructions not
+as boolean functions <img width="19" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img379.gif" alt="$F$"> over the whole state space <img width="29" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img380.gif" alt="$\mathbf{B}^n$">
+(in the case of an <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$"> bit machine), but as parameterized functions 
+<!-- MATH
+ $f_{\mathbf{x}}$
+ -->
+<img width="23" height="34" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img381.gif" alt="$f_{\mathbf{x}}$"> over <img width="33" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img382.gif" alt="$\mathbf{B}^m$">, where the vector <!-- MATH
+ $\mathbf{x}\in \mathbf{Z}^n$
+ -->
+<img width="62" height="34" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img383.gif" alt="$\mathbf{x}\in \mathbf{Z}^n$"> 
+only holds the bit-positions of the relevant arguments.
+Consequently we refer to the resulting instruction <img width="19" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img379.gif" alt="$F$"> as ``applying f
+to the bits <!-- MATH
+ $x_0, x_1 \ldots x_{n-1}$
+ -->
+<img width="115" height="33" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img384.gif" alt="$x_0, x_1 \ldots x_{n-1}$">''.
+
+</p><p>
+While it is clear what we mean by e.g. ``swapping the bits 3 and
+5'' on a classical computer, we cannot blindly adopt
+this concept to quantum computing, because unitary operators
+operate on states and a single qubit doesn't have a state.<a name="tex2html19" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#foot1538"><sup>2.5</sup></a>
+</p><p>
+In <a href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#qc-qreg">2.2.1.5</a> we have defined a <i>quantum 
+register</i> as a sequence of (mutually different) qubit-positions
+<!-- MATH
+ $\mathbf{s}={\langle s_0,s_1\ldots s_{m-1} \rangle}$
+ -->
+<img width="161" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img385.gif" alt="$\mathbf{s}={\langle s_0,s_1\ldots s_{m-1} \rangle}$">, which is the quantum
+analogon to the above argument vector <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img386.gif" alt="$\mathbf{v}$">, and a class
+of <img width="75" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img345.gif" alt="$(n-m)!$"> reordering operators <!-- MATH
+ $\Pi^{(k)}_{\mathbf{s}}$
+ -->
+<img width="37" height="41" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img387.gif" alt="$\Pi^{(k)}_{\mathbf{s}}$"> which meet 
+the condition
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\Pi^{(k)}_{\mathbf{s}}\,{|d_0,d_1\ldots d_{n-1} \rangle}=
+  {|d_{s_0},d_{s_1}\ldots d_{s_{m-1}} \rangle}
+  {|\tilde{\jmath}^{(k)} \rangle}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="357" height="34" border="0" src="./Components of a Quantum Computer_files/img388.gif" alt="\begin{displaymath}
+\Pi^{(k)}_{\mathbf{s}} {\vert d_0,d_1\ldots d_{n-1} \rangl...
+...dots d_{s_{m-1}} \rangle}
+{\vert\tilde{\jmath}^{(k)} \rangle}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.31)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+
+<p>
+</p><p>
+</p><div><b>Definition  4</b> (Register Operator)  &nbsp; 
+The register operator <img width="42" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img389.gif" alt="$U(\mathbf{s})$"> for an <img width="21" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img254.gif" alt="$m$">-qubit unitary 
+operator <!-- MATH
+ $U:\mathbf{C}^{2^m}\to\mathbf{C}^{2^m}$
+ -->
+<img width="134" height="20" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img390.gif" alt="$U:\mathbf{C}^{2^m}\to\mathbf{C}^{2^m}$"> and a <img width="21" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img254.gif" alt="$m$">-qubit
+quantum register <img width="13" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img336.gif" alt="$\mathbf{s}$"> on an <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$">-qubit quantum computer
+is the <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$">-qubit operator
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+U(\mathbf{s})={\Pi}^\dagger _{\mathbf{s}}\,(U \times I(n-m))\,\Pi_s
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="237" height="33" border="0" src="./Components of a Quantum Computer_files/img391.gif" alt="\begin{displaymath}
+U(\mathbf{s})={\Pi}^\dagger _{\mathbf{s}} (U \times I(n-m)) \Pi_s
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.32)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+with an arbitrary reordering operator <!-- MATH
+ $\Pi_{\mathbf{s}}$
+ -->
+<img width="26" height="34" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img343.gif" alt="$\Pi_{\mathbf{s}}$"></div><p></p>
+
+<p>
+So <!-- MATH
+ $U(\mathbf{s})\,{|\Psi \rangle}$
+ -->
+<img width="73" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img392.gif" alt="$U(\mathbf{s}) {\vert\Psi \rangle}$"> is what we actually  
+mean, by ``application of operator <img width="19" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img210.gif" alt="$U$"> to quantum register 
+<img width="13" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img336.gif" alt="$\mathbf{s}$">''.
+Since there are <!-- MATH
+ $\frac{n!}{(n-m)!}$
+ -->
+<img width="53" height="41" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img393.gif" alt="$\frac{n!}{(n-m)!}$"> possible <img width="21" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img254.gif" alt="$m$">-qubit registers
+on an <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$">-qubit machine, a given <img width="21" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img254.gif" alt="$m$">-qubit operator <img width="19" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img210.gif" alt="$U$"> 
+can describe <!-- MATH
+ $\frac{n!}{(n-m)!}$
+ -->
+<img width="53" height="41" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img393.gif" alt="$\frac{n!}{(n-m)!}$"> different transformations 
+<img width="42" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img389.gif" alt="$U(\mathbf{s})$">.
+
+</p><p>
+In analogy to boolean networks, unitary operators which can be 
+applied to arbitrary sets of qubits are also referred to as
+<i>quantum gates</i>.
+
+</p><p>
+
+</p><h3><a name="SECTION00322300000000000000"></a><a name="qc-univgates"></a>
+<br>
+Universal Quantum Gates
+</h3>
+
+<p>
+A well known result from classical boolean logic, is that 
+any possible function <!-- MATH
+ $f: \mathbf{B}^n \to \mathbf{B}^m$
+ -->
+<img width="114" height="34" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img394.gif" alt="$f: \mathbf{B}^n \to \mathbf{B}^m$"> can be 
+constructed as a composition from a small universal set
+of operators if we can ``wire'' the inputs and outputs to
+arbitrary bits in a feed-forward network.
+Examples for universal sets of logical gates are 
+<img width="58" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img395.gif" alt="$\{\vee,\neg\}$">, <img width="64" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img396.gif" alt="$\{\to,\neg\}$"> or <!-- MATH
+ $\{ \bar{\wedge} \}$
+ -->
+<img width="37" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img397.gif" alt="$\{ \bar{\wedge} \}$">.
+
+</p><p>
+As mentioned in <a href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node5.html#qi-unitary">1.3.2.6</a>, unitary operations can
+be described as abstract ``rotations'' in the Hilbert space.
+A complex rotation of a single qubit has the general form
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+U2(\omega,\alpha,\beta,\phi)=
+  \mathrm{e}^{-\mathrm{i}\phi}
+  \left(\begin{array}{cc}
+  
+    \mathrm{e}^{\mathrm{i}\alpha} \cos\omega & -\mathrm{e}^{-\mathrm{i}\phi} \sin\omega \\
+    \mathrm{e}^{\mathrm{i}\phi} \sin\omega & \mathrm{e}^{-\mathrm{i}\alpha} \cos\omega 
+  
+  \end{array}\right)
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="376" height="54" border="0" src="./Components of a Quantum Computer_files/img398.gif" alt="\begin{displaymath}
+U2(\omega,\alpha,\beta,\phi)=
+\mathrm{e}^{-\mathrm{i}\phi}...
+...thrm{e}^{-\mathrm{i}\alpha} \cos\omega
+\end{array}\right)\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.33)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+If this operator could be applied to arbitrary 2-dimensional
+subspaces <!-- MATH
+ $\mathcal{H}'=\mathbf{C}^2$
+ -->
+<img width="74" height="20" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img399.gif" alt="$\mathcal{H}&#39;=\mathbf{C}^2$"> of <!-- MATH
+ $\mathcal{H}=\mathcal{H}'\times\mathcal{H}''$
+ -->
+<img width="115" height="36" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img400.gif" alt="$\mathcal{H}=\mathcal{H}&#39;\times\mathcal{H}&#39;&#39;$">,
+then any unitary transformation could be constructed
+by composition in at most <!-- MATH
+ ${\dim\mathcal{H}\choose 2}$
+ -->
+<img width="60" height="46" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img401.gif" alt="${\dim\mathcal{H}\choose 2}$">
+steps [<a href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node19.html#murnaghan">14</a>], very much like a general rotation in 
+<img width="30" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img402.gif" alt="$\mathbf{R}^n$"> can be decomposed into <img width="32" height="46" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img403.gif" alt="${n \choose 2}$"> simple
+rotations in the coordinate planes.
+
+<p>
+In our definition of quantum gates, however, we are restricted
+to subspaces corresponding to quantum registers (see <a href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#qc-qreg">2.2.1.5</a>),
+so in the case of an <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$">-qubit quantum computer (<!-- MATH
+ $\dim\mathcal{H}=2^n$
+ -->
+<img width="99" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img404.gif" alt="$\dim\mathcal{H}=2^n$">), 
+this leaves us with merely <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$"> possible 1-qubit subspaces <img width="26" height="19" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img327.gif" alt="$\mathcal{H}&#39;$">
+and the corresponding sets of register operators 
+<!-- MATH
+ $U2^{(i)}(\omega,\alpha,\beta,\phi)$
+ -->
+<img width="131" height="41" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img405.gif" alt="$U2^{(i)}(\omega,\alpha,\beta,\phi)$">.
+Since <!-- MATH
+ $[U2^{(i)},U2^{(j)}]=0$
+ -->
+<img width="140" height="41" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img406.gif" alt="$[U2^{(i)},U2^{(j)}]=0$">, any composition <img width="19" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img210.gif" alt="$U$"> of <img width="29" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img407.gif" alt="$U2$"> gates, 
+would result in a transformation of the form
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+U {|d_0,d_1,\ldots d_{n-1} \rangle}=
+  (U_1 {|d_0 \rangle})(U_2 {|d_2 \rangle})\ldots (U_{n-1} {|d_{n-1} \rangle})
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="423" height="33" border="0" src="./Components of a Quantum Computer_files/img408.gif" alt="\begin{displaymath}
+U {\vert d_0,d_1,\ldots d_{n-1} \rangle}=
+(U_1 {\vert d_0 ...
+...2 {\vert d_2 \rangle})\ldots (U_{n-1} {\vert d_{n-1} \rangle})
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.34)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+
+<p>
+So just as the <img width="47" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img409.gif" alt="$\mathrm{NOT}$"> gate itself is not universal for
+boolean logic, to construct a universal set of quantum gates,
+we require an additional 2-qubit operation, to
+create entangled multi-qubit states.
+
+</p><p>
+One possibility for a nontrivial 2-qubit operator is XOR which is 
+defined as <!-- MATH
+ $\mathit{XOR}: {|x,y \rangle} \to {|x,x \oplus y \rangle}$
+ -->
+<img width="209" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img410.gif" alt="$\mathit{XOR}: {\vert x,y \rangle} \to {\vert x,x \oplus y \rangle}$"> or in matrix
+notation:
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mathit{XOR}=
+  \left(\begin{array}{c c c c}
+  1&0&0&0\\0&1&0&0\\0&0&0&1\\0&0&1&0
+  \end{array}\right)
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="192" height="99" border="0" src="./Components of a Quantum Computer_files/img411.gif" alt="\begin{displaymath}
+\mathit{XOR}=
+\left(\begin{array}{c c c c}
+1&amp;0&amp;0&amp;0 0&amp;1&amp;0&amp;0 0&amp;0&amp;0&amp;1 0&amp;0&amp;1&amp;0
+\end{array}\right)
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.35)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+
+<p>
+Deutsch [<a href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node19.html#deutsch2">6</a>] has shown that the set
+<!-- MATH
+ $\{ U2(\omega,\alpha,\beta,\phi),\mathit{XOR}\}$
+ -->
+<img width="185" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img412.gif" alt="$\{ U2(\omega,\alpha,\beta,\phi),\mathit{XOR}\}$"> is in fact  
+universal for unitary transformation.
+Furthermore, since <!-- MATH
+ $\{ U2(\omega',\alpha',\beta',\phi')^n \}$
+ -->
+<img width="161" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img413.gif" alt="$\{ U2(\omega&#39;,\alpha&#39;,\beta&#39;,\phi&#39;)^n \}$">
+is dense in <!-- MATH
+ $\{ U2(\omega,\alpha,\beta,\phi) \}$
+ -->
+<img width="135" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img414.gif" alt="$\{ U2(\omega,\alpha,\beta,\phi) \}$"> for almost
+any<a name="tex2html20" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#foot1611"><sup>2.6</sup></a>set of parameters,
+<!-- MATH
+ $\{ U2, \mathit{XOR}\}$
+ -->
+<img width="98" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img416.gif" alt="$\{ U2, \mathit{XOR}\}$"> is universal for most <img width="29" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img407.gif" alt="$U2$"> in the sense
+that any unitary transformation <img width="19" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img210.gif" alt="$U$"> can be approximated to
+arbitrary precision.
+
+</p><p>
+Deutsch also proposed a 3-qubit gate <img width="44" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img417.gif" alt="$D(\theta)$"> which is 
+universal, while only requiring one parameter:
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+D(\theta):{|i,j,k \rangle} \to 
+  \left\{ \begin{array}{cl}
+  i \cos{\theta}\,{|i,j,k \rangle}+\sin\theta\,{|i,j,1-k \rangle} &
+  \;\mbox{for}\; i=j=1 \\
+  {|i,j,k \rangle} & \;\mbox{otherwise}
+  \end{array}\right.
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><a name="qc-deutsch"></a><img width="535" height="54" border="0" src="./Components of a Quantum Computer_files/img418.gif" alt="\begin{displaymath}
+D(\theta):{\vert i,j,k \rangle} \to
+\left\{ \begin{array}...
+...vert i,j,k \rangle} &amp; \;\mbox{otherwise}
+\end{array}\right.
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.36)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+
+<p>
+
+</p><h3><a name="SECTION00322400000000000000"></a><a name="qc-pseudocl"></a>
+<br>
+Pseudo-classic Operators
+</h3>
+
+<p>
+The general form of a unitary operator <img width="19" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img210.gif" alt="$U$"> over <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$"> qubits is
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+U=\sum_{i=0}^{2^n-1} \sum_{j=0}^{2^n-1} 
+  {|i \rangle}\,u_{ij}\,{\langle j|}
+  \quad\mathrm{with}\quad \sum_{k=0}^{2^n-1} {u}^*_{ki} u_{kj}=\delta_{ij}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="384" height="61" border="0" src="./Components of a Quantum Computer_files/img369.gif" alt="\begin{displaymath}
+U=\sum_{i=0}^{2^n-1} \sum_{j=0}^{2^n-1}
+{\vert i \rangle}...
+...rm{with}\quad \sum_{k=0}^{2^n-1} {u}^*_{ki} u_{kj}=\delta_{ij}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.37)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+If the matrix elements <img width="27" height="33" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img419.gif" alt="$u_{ij}$"> are of the form
+<!-- MATH
+ $u_{ij}=\delta_{i\pi_j}$
+ -->
+<img width="80" height="34" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img420.gif" alt="$u_{ij}=\delta_{i\pi_j}$"> with some permutation <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img340.gif" alt="$\pi$">, then
+their effect
+on pure states (base-vectors) can be described in terms of 
+classical reversible boolean logic.
+
+<p>
+</p><p>
+</p><div><b>Definition  5</b> (Pseudo-classic Operator)  &nbsp; 
+A <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$">-qubit pseudo-classic operator is a unitary operator 
+of the form  <!-- MATH
+ $U:{|i \rangle}\to{|\pi_i \rangle}$
+ -->
+<img width="113" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img421.gif" alt="$U:{\vert i \rangle}\to{\vert\pi_i \rangle}$"> with some permutation 
+<img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img340.gif" alt="$\pi$"> over <!-- MATH
+ $\mathbf{Z}^{2^n}$
+ -->
+<img width="34" height="19" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img422.gif" alt="$\mathbf{Z}^{2^n}$">.</div><p></p>
+
+<p>
+For <img width="69" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img423.gif" alt="$\theta=\pi/2$"> the universal Deutsch gate <img width="44" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img417.gif" alt="$D(\theta)$"> 
+(<a href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#qc-deutsch">2.36</a>) degenerates into the pseudo-classic operator
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+T=D(\frac{\pi}{2})={|i,j,(i\wedge j)\oplus k \rangle}{\langle i,j,k|}
+  \quad\mathrm{with}\quad i,j,k\in\mathbf{B}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="445" height="41" border="0" src="./Components of a Quantum Computer_files/img424.gif" alt="\begin{displaymath}
+T=D(\frac{\pi}{2})={\vert i,j,(i\wedge j)\oplus k \rangle}{\langle i,j,k\vert}
+\quad\mathrm{with}\quad i,j,k\in\mathbf{B}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.38)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+<img width="18" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img425.gif" alt="$T$"> is the 3-bit controlled-not or <i>Toffoli gate</i>, which
+is a universal gate for reversible boolean logic.
+
+<p>
+Let <!-- MATH
+ $f: {\bf Z}_{2^n} \to {\bf Z}_{2^n}$
+ -->
+<img width="119" height="34" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img426.gif" alt="$f: {\bf Z}_{2^n} \to {\bf Z}_{2^n}$"> be a bijective function,
+then the corresponding pseudo-classic operator <img width="19" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img379.gif" alt="$F$"> is given as
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+F=\sum_{i=0}^{2^n-1} {|f(i) \rangle}{\langle i|}
+  \quad\mathrm{and}\quad F^{-1}={F}^\dagger =\sum_{i=0}^{2^n-1} {|i \rangle}{\langle f(i)|}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="409" height="58" border="0" src="./Components of a Quantum Computer_files/img427.gif" alt="\begin{displaymath}
+F=\sum_{i=0}^{2^n-1} {\vert f(i) \rangle}{\langle i\vert}
+...
+...agger =\sum_{i=0}^{2^n-1} {\vert i \rangle}{\langle f(i)\vert}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.39)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+
+<p>
+
+</p><h3><a name="SECTION00322500000000000000"></a><a name="qc-qufunct"></a>
+<br>
+Quantum Functions
+</h3>
+
+<p>
+One obvious problem of quantum computing is its restriction to 
+reversible computations.
+Consider a simple arithmetical operation like integer division by 2
+(<!-- MATH
+ $\mathit{DIV2}' {|i \rangle} = {|i/2 \rangle}$
+ -->
+<img width="139" height="38" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img428.gif" alt="$\mathit{DIV2}&#39; {\vert i \rangle} = {\vert i/2 \rangle}$"> for even <img width="11" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img317.gif" alt="$i$"> and <!-- MATH
+ ${|(i-1)/2 \rangle}$
+ -->
+<img width="90" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img429.gif" alt="${\vert(i-1)/2 \rangle}$"> for
+odd <img width="11" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img317.gif" alt="$i$">).
+Clearly, this operation is non-reversible since <!-- MATH
+ $\mathit{DIV2}' {|0 \rangle}=\mathit{DIV2}' 
+{|1 \rangle}$
+ -->
+<img width="178" height="38" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img430.gif" alt="$\mathit{DIV2}&#39; {\vert \rangle}=\mathit{DIV2}&#39;
+{\vert 1 \rangle}$">, so no corresponding pseudo-classic operator exists. 
+
+</p><p>
+However, if we use a second register with the initial value <img width="27" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img287.gif" alt="${\vert \rangle}$">,
+then we can define an operator <img width="52" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img431.gif" alt="$\mathit{DIV2}$"> which matches the condition
+<!-- MATH
+ $\mathit{DIV2}{|x,0 \rangle} = {|x,x/2 \rangle}$
+ -->
+<img width="179" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img432.gif" alt="$\mathit{DIV2}{\vert x,0 \rangle} = {\vert x,x/2 \rangle}$"> or <!-- MATH
+ ${|x,(x-1)/2 \rangle}$
+ -->
+<img width="113" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img433.gif" alt="${\vert x,(x-1)/2 \rangle}$"> respectively.
+The behavior of <!-- MATH
+ $\mathit{DIV2}{|x,y \neq 0 \rangle}$
+ -->
+<img width="128" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img434.gif" alt="$\mathit{DIV2}{\vert x,y \neq 0 \rangle}$"> is undefined and can be set
+arbitrarily as long as <img width="52" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img431.gif" alt="$\mathit{DIV2}$"> remains pseudo-classic.<a name="tex2html21" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#foot1683"><sup>2.7</sup></a>.
+
+</p><p>
+</p><p>
+</p><div><b>Definition  6</b> (Quantum Functions)  &nbsp; 
+For any function <!-- MATH
+ $f: {\bf B}^n \to {\bf B}^m$
+ -->
+<img width="114" height="34" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img436.gif" alt="$f: {\bf B}^n \to {\bf B}^m$">
+(or equivalently <!-- MATH
+ $f: {\bf Z}_{2^n} \to {\bf Z}_{2^m}$
+ -->
+<img width="122" height="34" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img437.gif" alt="$f: {\bf Z}_{2^n} \to {\bf Z}_{2^m}$">) there exists
+a class of pseudo-classic operators 
+<!-- MATH
+ $F: \mathbf{C}^{2^{n+m}} \to \mathbf{C}^{2^{n+m}}$
+ -->
+<img width="166" height="22" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img438.gif" alt="$F: \mathbf{C}^{2^{n+m}} \to \mathbf{C}^{2^{n+m}}$"> 
+working on an <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$">-qubits input and an <img width="21" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img254.gif" alt="$m$">-qubits output register 
+with <!-- MATH
+ $F {|x,0 \rangle} = {|x,f(x) \rangle}$
+ -->
+<img width="154" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img439.gif" alt="$F {\vert x,0 \rangle} = {\vert x,f(x) \rangle}$">.
+Operators of that kind are referred to as quantum functions.</div><p></p>
+
+<p>
+For any boolean function <!-- MATH
+ $f: {\bf B}^n \to {\bf B}^m$
+ -->
+<img width="114" height="34" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img436.gif" alt="$f: {\bf B}^n \to {\bf B}^m$"> there exist
+<!-- MATH
+ $(2^{n+m}-2^n)!$
+ -->
+<img width="107" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img440.gif" alt="$(2^{n+m}-2^n)!$"> different quantum functions <img width="19" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img379.gif" alt="$F$">.
+
+</p><p>
+
+</p><h3><a name="SECTION00322600000000000000"></a><a name="qc-cond"></a>
+<br>
+Conditional Operators
+</h3>
+
+<p>
+Classical programs allow the conditional execution of
+code in dependence on the content of a boolean variable
+(conditional branching).
+
+</p><p>
+A unitary operator, on the other hand, is static and
+has no internal flow-control. 
+Nevertheless, we can conditionally apply an <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$"> qubit operator 
+<img width="19" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img210.gif" alt="$U$"> to a quantum register by using an <i>enable</i> 
+qubit and define an <img width="48" height="33" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img441.gif" alt="$n+1$"> qubit operator <img width="24" height="19" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img325.gif" alt="$U&#39;$">
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+U'=
+  \left(\begin{array}{cc}
+  I(n) & 0 \\0 & U
+  \end{array}\right)
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="147" height="54" border="0" src="./Components of a Quantum Computer_files/img442.gif" alt="\begin{displaymath}
+U&#39;=
+\left(\begin{array}{cc}
+I(n) &amp; 0  0 &amp; U
+\end{array}\right)\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.40)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+So <img width="19" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img210.gif" alt="$U$"> is only applied to base-vectors where the enable bit
+is set.
+This can be easily extended to enable-registers of arbitrary length.
+
+<p>
+</p><p>
+</p><div><b>Definition  7</b> (Conditional Operator)  &nbsp; 
+A conditional operator <!-- MATH
+ $U_{[[\mathbf{e}]]}$
+ -->
+<img width="40" height="34" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img443.gif" alt="$U_{[[\mathbf{e}]]}$"> with the enable register
+<img width="15" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img444.gif" alt="$\mathbf{e}$"> is a unitary operator of the form
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+U_{[[\mathbf{e}]]}:{|i,\epsilon \rangle}={|i \rangle}{|\epsilon \rangle}_\mathbf{e} 
+  \to 
+  \left\{ \begin{array}{cl} 
+  (U\,{|i \rangle})\,{|\epsilon \rangle}_\mathbf{e} &
+  \;\mbox{if}\; \epsilon=111\ldots \\
+  {|i \rangle}{|\epsilon \rangle}_\mathbf{e} & \;\mbox{otherwise} 
+  \end{array}\right.
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="414" height="54" border="0" src="./Components of a Quantum Computer_files/img445.gif" alt="\begin{displaymath}
+U_{[[\mathbf{e}]]}:{\vert i,\epsilon \rangle}={\vert i \ran...
+...\rangle}_\mathbf{e} &amp; \;\mbox{otherwise}
+\end{array}\right.\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.41)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p></div><p></p>
+
+<p>
+Conditional operators a frequently used in arithmetic 
+quantum functions and other pseudo-classic operators.
+
+</p><p>
+If the architecture allows the efficient implementation
+of the <i>controlled-not</i> gate
+<!-- MATH
+ $C:{|x,y_1,y_2\ldots \rangle}\to
+{|(x\oplus\bigwedge_i y_i),y_1,y_2\ldots \rangle}$
+ -->
+<img width="336" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img446.gif" alt="$C:{\vert x,y_1,y_2\ldots \rangle}\to
+{\vert(x\oplus\bigwedge_i y_i),y_1,y_2\ldots \rangle}$">,
+then conditional pseudo-classic operators can be realized 
+by simply adding the enable string to the control register 
+of all controlled-not operations.
+
+</p><p>
+
+</p><h2><a name="SECTION00323000000000000000">
+Input and Output</a>
+</h2>
+
+<p>
+
+</p><h3><a name="SECTION00323100000000000000">
+Quantum Computing and Information Processing</a>
+</h3>
+
+<p>
+In <a href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node7.html#qc-physcomp">2.1.3</a> we have shown that the interpretation
+of computing as a physical process, rather than the 
+abstract manipulation of symbols, leads to an extended
+notion of computability.
+We have also identified the the concept of unitary transformations
+as an adequate paradigm for ``physical computability''.
+
+</p><p>
+Unitary transformations describe the transition between machine 
+states and thereby the temporal evolution of a quantum system.
+The very notion of a (quantum) computer as a ``computing 
+machine'' requires, however, that the evolution of the physical 
+system corresponds to a processing of information.
+
+</p><p>
+Classical information theory requires that any ``reasonable''
+information can be expressed as a series of answers to
+yes-no questions, i.e. a string of bits.
+But unlike classical symbolic computation, where every single 
+step of a computation can be mapped onto a bit-string, 
+physical computation requires such a labeling only for
+the initial and the final machine state (see <a href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node7.html#qc-tempev">2.1.3.2</a>),
+the labels of which make up the input and output of the
+computation.
+
+</p><p>
+This requirement is in full accordance with the Copenhagen
+interpretation of quantum physics, which states that 
+the setup and the outcome of any experiment has to be
+described in classical terms.
+
+</p><p>
+
+</p><h3><a name="SECTION00323200000000000000">
+Labeling of States</a>
+</h3>
+
+<p>
+As the machine state <img width="19" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img308.gif" alt="$\Psi$"> is not directly accessible, any
+physically realizable labeling has to correspond to an
+observable <img width="21" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img54.gif" alt="$\mathcal{O}$">.
+As has been shown in <a href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node5.html#qi-observe">1.3.2.2</a>, in quantum physics,
+an observable <img width="21" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img54.gif" alt="$\mathcal{O}$"> is expressed by a Hermitian operator
+<img width="20" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img108.gif" alt="$O$">.
+
+</p><p>
+A natural choice for <img width="21" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img54.gif" alt="$\mathcal{O}$"> on an <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$">-qubit quantum computer
+would be the classical values
+<!-- MATH
+ $\mathcal{N}=(\mathcal{N}_0,\mathcal{N}_1,\ldots \mathcal{N}_{n-1})$
+ -->
+<img width="193" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img447.gif" alt="$\mathcal{N}=(\mathcal{N}_0,\mathcal{N}_1,\ldots \mathcal{N}_{n-1})$"> of the
+singe qubits with the Hermitian operators
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+N=(N_0,N_1, \ldots N_{n_1})=
+    N_0+2 N_1+\ldots+2^{n-1} N_{n-1}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="420" height="33" border="0" src="./Components of a Quantum Computer_files/img448.gif" alt="\begin{displaymath}
+N=(N_0,N_1, \ldots N_{n_1})=
+N_0+2 N_1+\ldots+2^{n-1} N_{n-1}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.42)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+<br><p></p>
+<div align="CENTER">
+<!-- MATH
+ \begin{displaymath}
+N_i\,{|d_0\ldots d_{n-1} \rangle}=d_i\,{|d_0\ldots d_{n-1} \rangle}
+\end{displaymath}
+ -->
+
+<img width="255" height="33" border="0" src="./Components of a Quantum Computer_files/img318.gif" alt="\begin{displaymath}
+N_i {\vert d_0\ldots d_{n-1} \rangle}=d_i {\vert d_0\ldots d_{n-1} \rangle}
+\end{displaymath}">
+</div>
+<br clear="ALL">
+<p></p>
+As <img width="23" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img291.gif" alt="$\mathcal{N}$"> is only defined for eigenstates of 
+<img width="22" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img76.gif" alt="$N$"> (see <a href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node5.html#qi-measure">1.3.2.3</a>), the labeling <!-- MATH
+ $m:\mathcal{H}\to\mathbf{B}^n$
+ -->
+<img width="107" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img449.gif" alt="$m:\mathcal{H}\to\mathbf{B}^n$">
+is only defined for states <!-- MATH
+ $\Psi\in\mathcal{H}$
+ -->
+<img width="59" height="34" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img450.gif" alt="$\Psi\in\mathcal{H}$"> of the form
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+{|\Psi \rangle}=\mathrm{e}^{\mathrm{i}\phi}{|d_0\ldots d_{n-1} \rangle}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="164" height="33" border="0" src="./Components of a Quantum Computer_files/img451.gif" alt="\begin{displaymath}
+{\vert\Psi \rangle}=\mathrm{e}^{\mathrm{i}\phi}{\vert d_0\ldots d_{n-1} \rangle}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.43)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+
+<p>
+
+</p><h3><a name="SECTION00323300000000000000">
+Initialization</a>
+</h3>
+
+<p>
+To set a quantum computer to a desired initial state 
+<!-- MATH
+ ${|\Psi_0 \rangle}={|s_0 \rangle}$
+ -->
+<img width="94" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img452.gif" alt="${\vert\Psi_0 \rangle}={\vert s_0 \rangle}$"> corresponding to the boolean
+input string <img width="21" height="33" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img270.gif" alt="$s_0$">, it suffices to provide means to initially 
+``cool'' all qubits to <img width="27" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img287.gif" alt="${\vert \rangle}$"> and then apply any unitary 
+transformation <img width="19" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img210.gif" alt="$U$"> which matches the condition 
+<!-- MATH
+ $U {|0 \rangle} = {|s_0 \rangle}$
+ -->
+<img width="96" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img453.gif" alt="$U {\vert \rangle} = {\vert s_0 \rangle}$">.
+
+</p><p>
+</p><p>
+</p><div><b>Definition  8</b> &nbsp; 
+The <i>reset operator</i> <img width="19" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img454.gif" alt="$\mathit{R}$"> is a constant operator over 
+<img width="21" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img106.gif" alt="$\mathcal{H}$"> and defined as <!-- MATH
+ $\mathit{R}{|\Psi \rangle}={|0 \rangle}$
+ -->
+<img width="94" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img455.gif" alt="$\mathit{R}{\vert\Psi \rangle}={\vert \rangle}$">.</div><p></p>
+
+<p>
+
+</p><h3><a name="SECTION00323400000000000000">
+Measurement</a>
+</h3>
+
+<p>
+As has been described in <a href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node5.html#qi-measure">1.3.2.3</a>, it is impossible 
+to observe a quantum state <img width="18" height="34" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img40.gif" alt="$\psi$"> without, at the same time,
+forcing the system to adopt a state <img width="22" height="36" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img184.gif" alt="$\psi&#39;$"> which is an 
+eigenstate of the Hermitian operator <img width="20" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img108.gif" alt="$O$"> corresponding to
+the observed quantity <img width="21" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img54.gif" alt="$\mathcal{O}$">.
+The transition probability is thereby given as
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+p_{\psi\to\psi'}=\left|{\langle \psi'|\psi \rangle}\right|^2
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="140" height="34" border="0" src="./Components of a Quantum Computer_files/img456.gif" alt="\begin{displaymath}
+p_{\psi\to\psi&#39;}=\left\vert{\langle \psi&#39;\vert\psi \rangle}\right\vert^2
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.44)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+
+<p>
+If we measure the binary values <img width="23" height="18" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img291.gif" alt="$\mathcal{N}$"> of an <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$">-qubit
+quantum computer in the state
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+{|\Psi \rangle}=\sum_{i=0}^{2^n-1} c_i {|i \rangle}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="117" height="58" border="0" src="./Components of a Quantum Computer_files/img457.gif" alt="\begin{displaymath}
+{\vert\Psi \rangle}=\sum_{i=0}^{2^n-1} c_i {\vert i \rangle}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.45)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+the probabilities to measure <img width="11" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img317.gif" alt="$i$"> and the assorted post measurement 
+states are consequently
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+p_i=|c_i|^2 \quad\mathrm{and}\quad {|\psi_i' \rangle}={|i \rangle}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="213" height="33" border="0" src="./Components of a Quantum Computer_files/img458.gif" alt="\begin{displaymath}
+p_i=\vert c_i\vert^2 \quad\mathrm{and}\quad {\vert\psi_i&#39; \rangle}={\vert i \rangle}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.46)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+
+<p>
+
+</p><h3><a name="SECTION00323500000000000000">
+Partial Measurement</a>
+</h3>
+
+<p>
+Measurements don't have to cover the whole machine state, but
+can also be restricted to single qubits or quantum registers.
+
+</p><p>
+Consider two quantum registers with <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img5.gif" alt="$n$"> and <img width="21" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img254.gif" alt="$m$"> qubits in the 
+state 
+<br>
+</p><div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+{|\psi \rangle}=\sum_{i=0}^{2^n-1} \sum_{j=0}^{2^m-1} c_{i,j} {|i,j \rangle}
+  \quad\mathrm{with}\quad \sum_{i,j} c^*_{i,j}c_{i,j} = 1
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="365" height="61" border="0" src="./Components of a Quantum Computer_files/img459.gif" alt="\begin{displaymath}
+{\vert\psi \rangle}=\sum_{i=0}^{2^n-1} \sum_{j=0}^{2^m-1} c...
+...gle}
+\quad\mathrm{with}\quad \sum_{i,j} c^*_{i,j}c_{i,j} = 1
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.47)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+The probability <img width="20" height="33" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img460.gif" alt="$p_i$"> to measure the number <img width="11" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img317.gif" alt="$i$"> in the first register  
+and the according post measurement state <!-- MATH
+ ${|\psi_i' \rangle}$
+ -->
+<img width="35" height="37" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img461.gif" alt="${\vert\psi_i&#39; \rangle}$"> are given by
+<br>
+<div align="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+p_i=\sum_{j=0}^{2^m-1} c^*_{i,j} c_{i,j}, \quad\mathrm{and}\quad 
+  {|\psi_i' \rangle}=\frac{1}{\sqrt{p_i}} 
+  \sum_{j=0}^{2^m-1} c_{i,j} {|i,j \rangle}
+\end{equation}
+ -->
+<table width="100%" align="CENTER">
+<tbody><tr valign="MIDDLE"><td align="CENTER" nowrap=""><img width="392" height="61" border="0" src="./Components of a Quantum Computer_files/img462.gif" alt="\begin{displaymath}
+p_i=\sum_{j=0}^{2^m-1} c^*_{i,j} c_{i,j}, \quad\mathrm{and}...
+...}{\sqrt{p_i}}
+\sum_{j=0}^{2^m-1} c_{i,j} {\vert i,j \rangle}
+\end{displaymath}"></td>
+<td width="10" align="RIGHT">
+(2.48)</td></tr>
+</tbody></table>
+<br clear="ALL"></div><p></p>
+The measurement of qubits is the only non unitary operation, 
+a quantum computer must be able to perform during calculation.
+
+<p>
+<br></p><hr><h4>Footnotes</h4>
+<dl>
+<dt><a name="foot4284">...</a><a name="foot4284" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#tex2html17"><sup>2.3</sup></a>
+</dt><dd>Unless the machine state happens to be a product
+state, that is (see <a href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node5.html#qi-prod">1.3.3.2</a>).
+
+</dd><dt><a name="foot1496">... functions.</a><a name="foot1496" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#tex2html18"><sup>2.4</sup></a>
+</dt><dd>A classical analogon would be
+the class of reversible boolean functions
+
+</dd><dt><a name="foot1538">...</a><a name="foot1538" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#tex2html19"><sup>2.5</sup></a>
+</dt><dd>unless it's the only qubit in the quantum computer 
+at which point the whole question of addressed instructions 
+becomes moot, anyway.
+
+</dd><dt><a name="foot1611">...
+any</a><a name="foot1611" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#tex2html20"><sup>2.6</sup></a>
+</dt><dd>basically, it is just required that the quotients 
+between <!-- MATH
+ $\omega',\alpha',\beta',\phi'$
+ -->
+<img width="95" height="36" align="MIDDLE" border="0" src="./Components of a Quantum Computer_files/img415.gif" alt="$\omega&#39;,\alpha&#39;,\beta&#39;,\phi&#39;$"> and <img width="16" height="17" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img340.gif" alt="$\pi$"> are irrational.
+
+</dd><dt><a name="foot1683">...</a><a name="foot1683" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node8.html#tex2html21"><sup>2.7</sup></a>
+</dt><dd>In
+this special case, just one additional qubit to hold the lowest
+bit of the argument would suffice to extend <!-- MATH
+ $\mathit{DIV2}'$
+ -->
+<img width="57" height="19" align="BOTTOM" border="0" src="./Components of a Quantum Computer_files/img435.gif" alt="$\mathit{DIV2}&#39;$"> to a unitary
+operator.
+
+</dd></dl><hr>
+<!--Navigation Panel-->
+<a name="tex2html522" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node9.html">
+<img width="37" height="24" align="BOTTOM" border="0" alt="next" src="./Components of a Quantum Computer_files/next.png"></a> 
+<a name="tex2html518" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node6.html">
+<img width="26" height="24" align="BOTTOM" border="0" alt="up" src="./Components of a Quantum Computer_files/up.png"></a> 
+<a name="tex2html512" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node7.html">
+<img width="63" height="24" align="BOTTOM" border="0" alt="previous" src="./Components of a Quantum Computer_files/prev.png"></a> 
+<a name="tex2html520" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node1.html">
+<img width="65" height="24" align="BOTTOM" border="0" alt="contents" src="./Components of a Quantum Computer_files/contents.png"></a>  
+<br>
+<b> Next:</b> <a name="tex2html523" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node9.html">Models of Quantum Computation</a>
+<b> Up:</b> <a name="tex2html519" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node6.html">Quantum Computers</a>
+<b> Previous:</b> <a name="tex2html513" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node7.html">Introduction</a>
+ &nbsp; <b>  <a name="tex2html521" href="http://tph.tuwien.ac.at/~oemer/doc/quprog/node1.html">Contents</a></b> 
+<!--End of Navigation Panel-->
+<address>
+<br> <center> (c) Bernhard Ömer - <a href="mailto:oemer@tph.tuwien.ac.at">oemer@tph.tuwien.ac.at</a> - <a href="http://tph.tuwien.ac.at/~oemer/">http://tph.tuwien.ac.at/~oemer/</a> </center>
+</address>
+
+
+</body></html>

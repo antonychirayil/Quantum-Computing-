@@ -1,0 +1,24 @@
+SQP -Antony S Chirayil
+20 slides
+
+Introduction 
+History 
+What is a quantum Computer ? examples ? 
+qubits ? different states it works?
+
+CORE PART
+Various methods of implementing Quantum computing.
+how does it work? 
+Inside of a quantum processor? what is superconducting ? 
+superconducting quantum bits  ? how is it generated ? josphen's junction ? architecture ! 
+qubits ? 
+microwave resonators ? 
+design of a quantum computers? 
+what are the features it possess?
+CORE PART
+
+Examples of Quantum Computers
+Brief Examples of Quantum computers at IBM and D-wave 
+advantages of quantum over classical computers? 
+conclusion 
+thanks and credits

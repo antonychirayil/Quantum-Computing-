@@ -1,0 +1,447 @@
+[MUSIC PLAYING]
+00:06
+DANIEL SANK: Information is physical.
+00:08
+Written letters are carbon grains on paper.
+00:11
+Spoken words are vibrations of air molecules.
+00:14
+Computer bits are electric charge.
+00:17
+Each of these examples shares a common limitation--
+00:20
+they work under physics that was understood in the 1800s, known
+00:24
+as classical physics.
+00:26
+Science has progressed since then.
+00:28
+We've discovered a new set of laws called quantum mechanics.
+00:32
+Here's one of our chips designed to leverage
+00:35
+the rules of quantum mechanics to process information
+00:37
+in ways impossible on a computer based in classical physics.
+00:42
+You may have heard that quantum mechanics only
+00:44
+applies to microscopic objects, like atoms.
+00:47
+So how does this chip bring out quantum behavior?
+00:50
+I'm Daniel Sank, a research scientist working in the Google
+00:53
+AI Quantum Computing Lab.
+00:55
+In this video, we'll look at how our quantum
+00:58
+bits are made physically.
+01:00
+I want to explain the fundamental differences
+01:02
+between classical and quantum information
+01:04
+at the physical level so that you
+01:06
+can understand why our quantum bits are made how they are.
+01:11
+Physicists and computer scientists
+01:13
+both think in terms of states.
+01:15
+A physical state could be my position--
+01:18
+I can be on the left or on the right.
+01:21
+And physical laws determine how nature goes from one state
+01:24
+to another.
+01:25
+Observe.
+01:26
+If Sergio pushes me, my state changes.
+01:32
+A computer's state is the value of its memory bits
+01:35
+and computer programs determine how the computer goes
+01:38
+from one state to the next.
+01:40
+For example, when you hit the Play button,
+01:43
+YouTube's program started manipulating your computer's
+01:45
+memory to show this video.
+01:48
+Where physics has physical states and natural laws,
+01:51
+computer science has memory states and programs.
+01:56
+Think of the state of computer memory as a string of bits.
+02:00
+For end bits, there are two to the end possible strings.
+02:04
+But because we're based in classical physics,
+02:06
+the state of the computer is just one
+02:09
+of these states at each point in time.
+02:12
+On each step of a classical algorithm, we go from one state
+02:16
+to the next.
+02:17
+For example, the logic operation shown here
+02:21
+takes the state 0-0-0 to 1-1-0.
+02:25
+If we were to apply the same operation again,
+02:28
+we'd go from 1-1-0 to 0-1-0.
+02:31
+Compared to classical states, quantum states are more rich.
+02:35
+They can have weight in all possible classical states,
+02:38
+a situation physicists call superposition.
+02:41
+Each step of a quantum algorithm mixes the states
+02:44
+into complex superpositions.
+02:46
+For example, starting in 0-0-0, we
+02:49
+go to a superposition of 1-0-0, 1-0-1, and 1-1-1.
+02:55
+Then each of those three parts of the super post
+02:57
+state branches out to even more states.
+03:01
+The extra complexity of quantum computers
+03:04
+allows them to solve some problems
+03:06
+faster than a classical computer ever could.
+03:09
+We've discussed the computational difference
+03:11
+between classical and quantum, but how
+03:13
+do classical and quantum differ physically?
+03:16
+How do we bring out quantum mechanics
+03:18
+in our chip, which is so much bigger
+03:20
+than the tiny atoms in which quantum mechanics was
+03:23
+first discovered?
+03:24
+Let's take a detailed look at classical bits
+03:27
+at the physical level so that we can
+03:29
+understand the physical difference between classical
+03:32
+and quantum.
+03:33
+Classical computer bits are stored
+03:35
+in the presence or absence of charge
+03:37
+on a capacitor in a circuit called
+03:39
+dynamic RAM, or DRAM for short.
+03:42
+If there's charge, it's a logical 1,
+03:44
+and if there's no charge, it's a logical 0.
+03:47
+But there's more going on here.
+03:48
+Our logical 0 and 1 are actually made up
+03:52
+of the presence or absence of 300,000 electrons.
+03:56
+Why use so many?
+03:57
+In principle, we could just use the presence or absence of one
+04:01
+electron as our logical bid.
+04:03
+Well, physical bits are noisy.
+04:06
+Electrons are tiny and light, so they jiggle around and leak out
+04:11
+of the DRAM.
+04:12
+If we had only one electron and it were to leak out,
+04:16
+our bit would change value, which is an error.
+04:19
+By using lots of electrons, we're OK if a few leak out.
+04:23
+DRAM circuits periodically check the logical level
+04:27
+and replenish missing electrons.
+04:30
+Encoding one logical bit in the state of so many physical bits
+04:35
+gives classical information a level of reliability
+04:38
+that we take for granted.
+04:40
+We don't have to think about all those electrons bumping around
+04:42
+when we write our programs.
+04:45
+OK, so why can't we just put our DRAM
+04:48
+into a quantum superposition of 0 and 1?
+04:51
+Well, suppose we did have that superposition.
+04:55
+It wouldn't last long.
+04:56
+As soon as we do the first check to protect against a DRAM
+05:00
+error, we've forced the bit into either 0 or 1,
+05:04
+removing the quantum superposition state.
+05:07
+In fact, that collapse happens even
+05:09
+without us checking for errors.
+05:12
+A single photon interacting with just one of our electrons
+05:16
+can carry off information.
+05:18
+When that happens, it's as if the photon
+05:21
+observed the quantum state and the state collapses.
+05:26
+You can think of this as nature observing and thus destroying
+05:30
+our quantum states.
+05:32
+Errors like this are unique to quantum information.
+05:36
+In classical computing, you might be upset
+05:39
+if somebody peeks at your bits, but that peek doesn't
+05:42
+completely destroy them.
+05:45
+Note that an error occurs whenever nature observes
+05:48
+any one of our physical bits, so while we normally
+05:52
+stack up more physical bits for redundancy,
+05:55
+that approach actually makes quantum errors worse.
+05:59
+That's the main difficulty in quantum computation--
+06:02
+the fundamental quantum constituents of matter
+06:05
+are small and easily subjected to noise,
+06:08
+but we can't brute force our way around that noise
+06:10
+with redundancy because bigger systems are
+06:13
+more subject to quantum errors.
+06:16
+At Google, we use a technique that
+06:18
+gets the best of both worlds.
+06:20
+We use circuits with a huge number of electrons,
+06:23
+but we prevent quantum errors with superconductivity.
+06:26
+In regular metals, like with a conventional DRAM circuit,
+06:30
+every individual electron does its own thing.
+06:33
+As electrons move around, they can bounce off
+06:36
+the positively charged ions of the metal,
+06:38
+radiating vibrational waves that carry off quantum information
+06:41
+about the electrons.
+06:43
+This hectic, bustling cauldron of physical interactions
+06:47
+generates a lot of quantum errors,
+06:49
+and the information gets lost before we can use it.
+06:53
+However, when certain metals are cooled down,
+06:56
+their electrons join together in a single unit.
+06:59
+The individual electrons no longer scatter
+07:02
+and the rate of quantum errors drops to almost 0.
+07:07
+Our quantum bits are, in fact, just electoral oscillators
+07:10
+built from aluminum, which become
+07:11
+superconducting when cooled to below 1 degree Kelvin.
+07:15
+The oscillators store tiny amounts of electrical energy.
+07:19
+When the oscillator is in the 0 state, it has 0 energy.
+07:23
+When it's in the 1 state, it has a single quantum of energy.
+07:27
+The two states of the oscillator with 0 or 1 quantum of energy
+07:32
+are the logical states of our quantum bit,
+07:34
+or qubit for short.
+07:36
+Here's a picture of a superconducting qubit
+07:39
+along with a circuit diagram.
+07:41
+The crosses indicate Josephson tunnel junctions,
+07:44
+which are nonlinear superconducting inductors.
+07:47
+We pick the resonance frequency of our oscillators
+07:49
+to be about 6 gigahertz, which sets the energy difference
+07:53
+between the 0 and 1 states.
+07:55
+That's a low enough frequency that we
+07:57
+can build control electronics from readily available
+08:00
+commercial parts, but also high enough
+08:03
+that the ambient thermal energy doesn't
+08:05
+scramble the oscillation and introduce errors.
+08:09
+6 gigahertz corresponds to 300 millikelvin.
+08:13
+Fortunately, refrigerators that get to 15 millikelvin
+08:17
+are relatively standard commercial products.
+08:19
+For comparison, outer space is about 2.5 Kelvin.
+08:25
+I think it's cool that the cryostats in our lab
+08:27
+are colder than deep space.
+08:30
+Now let's take a minute to make a few comments on how
+08:32
+superconducting qubit architecture differs
+08:35
+from conventional computers.
+08:38
+In a conventional computer, memory and logic processing
+08:42
+are separated into the RAM and CPU.
+08:46
+When we want to do a computation,
+08:47
+we first move the data from the RAM to the CPU.
+08:52
+Then the circuits in the CPU do the computation,
+08:55
+and finally, the resulting data is written back to RAM.
+08:59
+In quantum computing, with superconducting qubits,
+09:02
+we can't afford the errors that would come
+09:05
+from moving the data around.
+09:07
+Instead, we build a grid of qubits, each one connected
+09:11
+to its neighbors.
+09:12
+The qubits stay put and we do logic operations
+09:15
+by sending control signals into individual qubits
+09:19
+or pairs of qubits.
+09:22
+Now that you have a basic picture of superconducting
+09:24
+qubits, let's take a look at one of the challenges
+09:27
+that we're still working on.
+09:29
+Superconductivity greatly reduces errors,
+09:32
+but there are still some.
+09:34
+For example, the electrons flowing in the oscillator
+09:38
+interact with charged particles in the surroundings,
+09:40
+leading to errors.
+09:42
+Suppose there were a charged ion inside the metal of our qubit.
+09:46
+The oscillating energy in the qubit
+09:48
+can transfer into that ion, causing the qubit's logic state
+09:52
+to flip, thus creating an error.
+09:55
+Improving the qubit fabrication process
+09:58
+to reduce these atomic imperfections
+10:00
+is a big part of our research.
+10:02
+Over the last several years, improvements
+10:05
+in microfabrication techniques have
+10:06
+decreased our qubit error rates a lot,
+10:09
+and we're still improving.
+10:11
+In this video, we focused on the idea
+10:13
+that information is physical.
+10:15
+We discussed the physical incarnation
+10:17
+of classical and quantum computer bits.
+10:20
+We introduced quantum errors and explained
+10:22
+why we need superconductivity to eliminate those errors.
+10:26
+If you'd like to know more, you can leave questions
+10:29
+in the comments section below.
+10:30
+It's important to me that you can understand
+10:32
+the physical aspects of quantum computation
+10:34
+as clearly as possible.
+10:36
+I'm also pretty active on Physics Stack Exchange.
+10:39
+You can find great questions and answers there, too.
+Tech
+Antony S Chirayil
+4/20
+
+
+

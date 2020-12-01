@@ -1,0 +1,136 @@
+
+Slide: Superconducting Qubits 
+
+Advantages of superconducting qubits
+Superconducting qubits are solid state electrical circuits.
+Compared with the qubits based on other quantum systems
+(such as trapped ions, nuclear magnetic resonance, linear optical
+systems, etc.), superconducting qubits have the following
+advantages:
+1. High designability. Superconducting qubit system has
+high designability. Different types of qubits, such as charge
+qubits, flux qubits, and phase qubits, can be designed. And
+different parameters, such as the energy level of the qubit
+and the coupling strength, can also be adjusted by adjusting
+the capacitance, inductance, and Josephson energy. Thus, the
+Hamiltonian of superconducting qubits can be designed.
+2. Scalability. The preparation of superconducting qubits is
+based on the existing semiconductor microfabrication process.
+High-quality devices can be prepared by leveraging advanced
+chip-making technologies, which is good for manufacturing
+and scalability.
+3. Easy to couple. The circuit nature of the superconducting
+qubit system makes it relatively easy to couple multiple qubits
+together. In general, superconducting qubits can be coupled
+by capacitance or inductance.
+4. Easy to control. The operation and measurement of superconducting
+qubits compatible with microwave control and
+operability. Thus, commercial microwave devices and equipment
+can be used in superconducting quantum computing experiments.
+These advantages make superconducting qubits become the
+leading candidate for scalable quantum computing. However,
+to build a large-scale quantum computing, there still remain
+some outstanding challenges. Due to the tunability and large
+size of superconducting qubits, the primary disadvantage of
+superconducting qubits is their short coherence times. Superconducting
+qubits are not true 2-level systems, thus the unwanted
+j1i ! j2i transition must be carefully avoided during
+information processing. Superconducting qubits require dilution
+refrigerators to maintain temperatures low enough, and
+advances of the capacity of such cryostats should be made
+before building a device with millions of qubits. In the last
+few years, superconducting qubits have seen drastic improvements
+in coherence time, operation fidelities, fast and high
+fidelity qubit readout, and even demonstrations of error correction
+and quantum algorithms, which we will introduce in
+the following contents.
+
+According to different degrees of freedom, superconducting
+qubits are mainly divided into three categories: charge qubits [25, 29], flux qubits [30], and phase qubits [31]. We
+can distinguish these tree types of superconducting qubit according
+to the ratio EJ=EC, where EJ is Josephson energy
+and EC is charging energy.
+The charge qubit is is also called Cooper-pair box qubit,
+which is shown in Fig. 1(a). For the charge qubit, the electrostatic
+energy of the Cooper-pair on the superconducting island
+is much larger than the Josephson coupling energy on
+the junction EJ  EC. The relevant quantum variable is
+the number of Cooper pairs that cross Josephson junction.
+Fig. 1(b) is a schematic diagram of a flux qubit. Typically,
+EJ=EC is much lager than 1 but smaller than 100 for flux
+qubit. The states of the flux qubit are distinguished by the direction
+of the continuous current state in the superconducting
+loop. As shown in Fig. 1(c), the phase qubit is a current-biased
+single-junction device with a large ratio EJ=EC (EJ  EC).
+Using the two lowest energy levels of the washboard potential,
+one phase qubit can be encoded.
+
+
+New types of superconducting qubits
+Based on the three superconducting qubit archetypes, many
+new types of superconducting qubits are derived, such as
+Transmon-type qubit, C-shunt flux qubit, Fluxonium, 0-
+qubit, hybrid qubit, and so on. Some are briefly introduced
+below.
+1. Transmon-type qubit
+Transmon-type qubit, including Transmon, Xmon, Gmon,
+3D Transmon etc., is currently the most popular superconducting
+qubit due to its simplicity and the flexibility of cQED
+architectures. Transmon was first proposed by Koch et al:
+in 2007 [32]. In the charge qubit, the charge dispersion decreases
+exponentially in EJ=EC, and the anharmonicity algebraically
+decreases with a slow power law of EJ=EC. Therefore,
+properly increasing EJ=EC can greatly reduce the sensitivity
+of the system to charges, while still maintaining sufficient
+anharmonicity. As shown in Fig. 2, the charge energy of
+Transmon qubit are decreased by paralleling a large interdigitated capacitor across the Josephson junction, thereby obtaining
+EJ=EC100.
+Xmon can be considered as a modified version of Transmon,
+which was proposed by Barends et al: in 2013 [33]. As
+shown in Fig. 3, different from the original Transmon’s interdigital
+capacitor, the Xmon qubit is formed by a cross capacitor,
+and the Xmon qubit is coupled to a common transmission
+line through a resonant cavity. Each Xmon is controlled
+by two independent control lines, a XY control line and a Z
+control line, which can be used for rotating the quantum state
+in the X, Y and Z directions. The qubits can be directly coupled
+through capacitance. The Xmon qubit combines fast control,
+long coherence, and straightforward connectivity, which
+is suitable for scalable superconducting quantum computing.
+Gmon [34] is based on the Xmon qubit, but the qubits are
+connected with a junction serving as a tunable inductor to control
+the coupling strength (see Fig. 4). The Gmon architecture
+is protected from the problem of frequency crowding that arise
+from fixed coupling, and provides a flexible platform with applications
+ranging from quantum computing to quantum simulation.
+However, the extra inductive coupler introduces additional
+decoherent channels, and the device layout becomes
+very complicated. In 2018, Yan et al: proposed a simple and
+generic scheme for a tunable coupler [35], which is a generic
+three-body system in a chain geometry, and the center mode
+is a tunable coupler (see Fig. 5). The center mode can be constructed
+with any flux-tunable circuit in which the resonance
+frequency can be tuned. By modulating the coupler frequency,
+the coupling strength of the two next-nearest neighbor qubits
+can be tuned. This architecture does not introduce additional
+components, and its layout is similar to the Xmon.
+3D Transmon is a development of Transmon qubits, which
+was proposed by Paik et al: in 2011 [36]. The biggest feature
+FIG. 3. (a) Optical micrograph of Xmon qubit. (b) Enlarged image
+of SQUID. (c) The electrical circuit of the qubit. Taken from [33].
+FIG. 4. Optical micrograph of two inductively coupled Gmon qubits.
+Taken from [34].
+FIG. 5. Circuit diagram of a superconducting circuit implementing a
+tunable coupler, consisting of two qubit modes (red and blue) and a
+coupler mode (black). Taken from [35].
+of 3D Transmon is the replacement of the planar transmissionline
+cavities with a three-dimensional waveguide cavity (see
+Fig. 6), which offers several advantages. First, the cavity
+has a larger mode volume and is much less sensitive to the
+surface dielectric losses. Second, the architecture provides
+the qubit with a well-controlled electromagnetic environment.
+Thus, this architecture could suppress the decoherence of
+qubit while maintaining sufficient coupling to the control signal.
+However, scalability is the major difficulty we have to
+overcome, if we want to build a large-scale device based on
+3D Transmon.

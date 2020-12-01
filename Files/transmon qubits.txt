@@ -1,0 +1,183 @@
+ Superconducting qubits generally consist of superconducting electrodes,
+or islands, that are interconnected by Josephson junctions.
+The Hamiltonian typically consists of two non-commuting contributions,
+one capacitive and one inductive.
+The first tends to localize Cooper pairs.
+The second favors their tunnelling from one island to another, in other words, their hopping. 
+
+ In this course, we will focus on the transmon, a derivative of the charge qubit.
+02:48
+The transmon is the superconducting qubit that we specialize on in QuTech.
+02:55
+In its simplest form, the transmon consists of two islands interconnected by one junction. 
+
+the transmon looks,
+03:06
+well, just like a parallel combination of one capacitor and one inductor.
+03:10
+In other words, an LC oscillator! 
+In the transmon, the inductance is provided by a Josephson junction and not by a typical coil inductor. 
+ As a final note, we build our transmon not from one but two Josephson junctions in parallel.
+05:33
+This gives us the possibility to tune the inductive element and thereby the qubit transition frequency,
+by threading a magnetic flux through the loop defined by the two junctions.
+We can do this independently for each qubit and on nanosecond timescales.
+This capability is the workhorse enabling two-qubit gates. 
+
+
+
+ Today I will give you an introduction to quantum computing with superconducting quantum circuits;
+00:13
+more specifically, quantum computing with transmon quantum bits or qubits
+00:18
+in the circuit quantum electrodynamics architecture.
+00:22
+Superconducting qubits differ in two important ways from truly quantum two-level systems
+00:26
+provided to us by nature, such as the spin of an electron or the spin of certain nuclei,
+00:32
+like Carbon 13 or Silicon 29.
+00:35
+First, they are multi-level systems, not unlike the electronic levels in atoms.
+00:41
+Multi-level quantum systems can be used effectively as qubits
+00:44
+by confining all dynamics to two quantum levels,
+00:48
+usually the ground state and the first excited state of the system.
+00:52
+Second, these qubits are circuits that we fabricate ourselves!
+00:56
+This has advantages and disadvantages.
+00:58
+On the bright side, we have freedom to design!
+01:01
+In a sense, we can play god designing artificial atoms.
+01:05
+However, fabrication uncertainty keeps us from making any two qubits the same!
+01:10
+For this reason, we like to say that qubits have individual personality!
+01:15
+While the form of the Hamiltonian describing them quantum mechanically is well known,
+01:19
+the parameters of this Hamiltonian cannot be perfectly targeted in fabrication.
+01:24
+This has interesting implications for scaling up our quantum processors,
+01:28
+which I will discuss in a later video.
+01:30
+But back to design.
+01:32
+Superconducting qubits generally consist of superconducting electrodes,
+01:36
+or islands, that are interconnected by Josephson junctions.
+01:40
+The Hamiltonian typically consists of two non-commuting contributions,
+01:44
+one capacitive and one inductive.
+01:47
+The first tends to localize Cooper pairs.
+01:50
+The second favors their tunnelling from one island to another, in other words, their hopping.
+01:56
+There exist numerous varieties of superconducting qubits:
+01:59
+the charge qubit, the flux qubit, the phase qubit, the fluxonium, and many more.
+02:05
+These qubit types differ in terms of the number of superconducting islands, the number of junctions,
+02:10
+and, also importantly, the relative energy scales of the capacitive and inductive terms.
+02:16
+Typically, superconducting qubits work in the frequency range between 4 and 8 GHz, approximately.
+02:23
+This frequency, let’s call it f_{01},
+02:25
+is related via Planck’s constant to the energy difference E_{01}
+02:30
+between the quantum levels that we assign as states 0 and 1.
+02:34
+f_{01} is also the frequency of the microwave pulses that we need
+02:38
+to induce coherent transitions between these levels.
+02:43
+In this course, we will focus on the transmon, a derivative of the charge qubit.
+02:48
+The transmon is the superconducting qubit that we specialize on in QuTech.
+02:55
+In its simplest form, the transmon consists of two islands interconnected by one junction.
+03:00
+Those of you familiar with circuits, particularly the electrical engineers,
+03:04
+will recognize that the transmon looks,
+03:06
+well, just like a parallel combination of one capacitor and one inductor.
+03:10
+In other words, an LC oscillator!
+03:13
+This gets us most of the way there, so let’s take a look.
+03:19
+The Hamiltonian for the LC oscillator consists of two terms
+03:22
+that are each quadratic with respect to one variable:
+03:25
+The capacitive term is quadratic on the charge accumulated on one island,
+03:29
+the opposite charge is accumulated in the other.
+03:32
+The inductive term is quadratic on the flux through the inductor.
+03:35
+This charge and this flux do not commute.
+03:38
+In fact, they are canonically conjugate variables.
+03:42
+A direct correspondence between this Hamiltonian can be made to that of the simple harmonic oscillator
+03:47
+by mapping flux to the position of the mass and charge to the mass’ momentum.
+03:54
+Physics students will thus not be surprised to learn that the spectrum of the quantized LC oscillator
+03:59
+is perfectly harmonic: levels are equally spaced in energy!
+04:03
+This equal spacing is given by a familiar formula: one over root LC.
+04:08
+But unfortunately, a harmonic spectrum does not a good qubit make!
+04:12
+It is very difficult to confine the dynamics to just two levels,
+04:16
+so ‘leakage’ out of the qubit subspace is a permanent threat.
+04:21
+That is why the transmon differs from the LC oscillator in a fundamental way.
+04:26
+In the transmon, the inductance is provided by a Josephson junction and not by a typical coil inductor.
+04:32
+The inductive energy for the junction is not quadratic, but a cosine function of the generalized flux through it.
+04:41
+This difference has important consequences for the spectrum:
+04:44
+crucially, it disrupts the harmonic spectrum in ways that are very practical.
+04:49
+At typical parameter values deep in the so-called transmon regime,
+04:54
+where the energy scale of the inductive term is much larger than that of the charging term
+04:58
+and let’s say, for the frequency f_{01} of about 6 GHz,
+05:03
+the transition from the first to the second-excited state is lower by approximately 300 MHz.
+05:11
+This difference is sufficient in practice to confine the dynamics to the lowest two levels, our qubit subspace,
+05:17
+when performing single-qubit gates with pulses of duration about 20 ns.
+05:22
+Brian will discuss the implementation of single-qubit gates in detail.
+05:27
+As a final note, we build our transmon not from one but two Josephson junctions in parallel.
+05:33
+This gives us the possibility to tune the inductive element and thereby the qubit transition frequency,
+05:39
+by threading a magnetic flux through the loop defined by the two junctions.
+05:43
+We can do this independently for each qubit and on nanosecond timescales.
+05:47
+This capability is the workhorse enabling two-qubit gates.
+05:51
+Adriaan will present these in a later video. 

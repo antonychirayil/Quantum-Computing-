@@ -1,0 +1,585 @@
+Quantum computers use the natural world to produce machines
+00:04
+with staggeringly powerful processing potential.
+00:07
+I think it's gonna be the most important computing
+00:09
+technology of this century, which we are really just about
+00:13
+one fifth into.
+00:14
+We could use quantum computers to simulate molecules, to
+00:17
+build new drugs and new materials and to solve problems
+00:20
+plaguing physicists for decades.
+00:23
+Wall Street could use them to optimize portfolios, simulate
+00:26
+economic forecasts and for complex risk analysis.
+00:30
+Quantum computing could also help scientists speed up
+00:32
+discoveries in adjacent fields like machine learning and
+00:35
+artificial intelligence.
+00:37
+Amazon, Google, IBM and Microsoft, plus a host of smaller
+00:41
+companies such as Rigetti and D-Wave, are all betting big
+00:44
+on Quantum. If you were a billionaire, how many of your
+00:47
+billion would you give over for an extra 10 years of life?
+00:51
+There are some simply astonishing financial opportunities
+00:54
+in quantum computing. This is why there's so much interest.
+00:58
+Even though it's so far down the road.
+01:01
+But nothing is ever a sure thing.
+01:03
+And dealing with the quirky nature of quantum physics
+01:05
+creates some big hurdles for this nascent technology.
+01:08
+From the very beginning, it was understood that building a
+01:13
+useful quantum computer was going to be a staggeringly hard
+01:17
+engineering problem if it was even possible at all.
+01:20
+And there were even distinguished physicists in the 90s who
+01:24
+said this will never work.
+01:26
+Is Quantum truly the next big thing in computing, or is it
+01:29
+destined to become something more like nuclear fusion?
+01:32
+Destined to always be the technology of the future, never
+01:35
+the present. In October 2019, Google made a big
+01:42
+announcement. Google said it had achieved quantum
+01:46
+supremacy. That's the moment when quantum computers can
+01:49
+beat out the world's most powerful supercomputers for
+01:52
+certain tasks.
+01:53
+They have demonstrated with a quantum computer that it can
+01:57
+perform a computation in seconds.
+02:00
+What would take the world's fastest supercomputer?
+02:03
+Years, thousands of years to do that same calculation.
+02:08
+And in the field, this is known as quantum supremacy and
+02:10
+it's a really important milestone.
+02:12
+Google used a 53 qubit processor named Sycamore to complete
+02:16
+the computation, a completely arbitrary mathematical
+02:19
+problem with no real world application.
+02:22
+The Google Quantum computer spit out an answer in about 200
+02:25
+seconds. It would have taken the world's fastest computer
+02:29
+around 10000 years to come up with a solution, according to
+02:32
+Google scientists.
+02:33
+With that, Google claimed it had won the race to quantum
+02:36
+supremacy. But IBM had an issue with the findings.
+02:39
+Yes, IBM, the storied tech company that helped usher in
+02:43
+giant mainframes and personal computing.
+02:50
+It's a major player in quantum computing.
+02:55
+IBM said one of its massive supercomputer networks, this
+02:58
+one at the Oak Ridge National Laboratories in Tennessee,
+03:01
+could simulate a quantum computer and theoretically solve
+03:04
+the same problem in a matter of days, not the 10000 years
+03:07
+that Google had claimed. Either way, it was a huge
+03:10
+milestone for quantum computers, and Silicon Valley is
+03:14
+taking notice. Venture capital investors are pouring
+03:17
+hundreds of millions of dollars into quantum computing
+03:20
+startups, even though practical applications are years or
+03:23
+even decades away by 2019.
+03:26
+Private investors have backed at least 52 quantum
+03:28
+technology companies around the world since 2012, according
+03:32
+to an analysis by nature.
+03:34
+Many of them were spun out of research teams at
+03:37
+universities in 2017 and 2018.
+03:40
+Companies received at least $450 million in private funding
+03:44
+more than four times the funding from the previous two
+03:46
+years. That's nowhere near the amount of funding going into
+03:50
+a field like artificial intelligence.
+03:52
+About $9.3
+03:54
+billion with a venture capital money poured into AI firms
+03:56
+in 2018. But the growth in quantum computing funding is
+04:00
+happening quickly for an industry without a real
+04:02
+application. Yet it is not easy to figure out how to
+04:06
+actually use a quantum computer to do something useful.
+04:10
+So nature gives you this very, very bizarre hammer in the
+04:14
+form of these this interference effect among all of these
+04:17
+amplitudes. Right.
+04:19
+And it's up to us as quantum computer scientists to figure
+04:23
+out what nails that hammer can hit.
+04:26
+That's leading to some backlash against the hype and
+04:29
+concern that quantum computing could soon become a bubble
+04:31
+and then dry up just as fast if progress stalls.
+04:35
+Quantum computers are also notoriously fickle.
+04:37
+They need tightly controlled environments to operate in.
+04:40
+Changes in nearby temperatures and electromagnetic waves
+04:43
+can cause them to mess up.
+04:45
+And then there's the temperature of the quantum chips
+04:47
+themselves. They need to be kept at temperatures colder
+04:50
+than interstellar space, close to absolute zero.
+05:00
+One of the central tenets of quantum physics is called
+05:02
+superposition. That means a subatomic particle like an
+05:06
+electron can exist in two different states at the same
+05:09
+time. It was and still is super hard for normal computers
+05:13
+to simulate quantum mechanics because of superposition.
+05:17
+No, it was only in the early eighties that a few
+05:19
+physicists, such as Richard Feynman had the amazing
+05:23
+suggestion that if nature is giving us that computational
+05:28
+lemon, well, why not make it into lemonade?
+05:30
+You've probably heard or read this explanation of how a
+05:33
+quantum computer works.
+05:35
+Regular or classical computers run on bits.
+05:38
+Bits can either be a 1 or a zero.
+05:41
+Quantum computers, on the other hand, run on quantum bits
+05:44
+or cubits. Cubits can be either 1 or zero or both or a
+05:48
+combination of the two at the same time.
+05:51
+That's not wrong per say, but it only scratches the
+05:53
+surface. According to Scott Aaronson, who teaches computer
+05:56
+science and quantum computing at the University of Texas in
+05:59
+Austin. We asked him to explain how quantum computing
+06:02
+actually works. Well, let me start with this.
+06:05
+You never hear your weather forecaster say we know there's
+06:08
+a negative 30 percent chance of rain tomorrow.
+06:11
+Right. That would just be non-sense, right?
+06:13
+Did the chance of something happening, as always, between 0
+06:16
+percent and 100 percent.
+06:18
+But now quantum mechanics is based on numbers called
+06:22
+amplitudes. Amplitudes can be positive or negative.
+06:27
+In fact, they can even be complex numbers involving the
+06:30
+square root of negative one.
+06:32
+So so a qubit is a bit that has an amplitude for being zero
+06:37
+and another amplitude for being one.
+06:40
+The goal for quantum computers is to make sure the
+06:42
+amplitudes leading to wrong answers cancel each other out.
+06:46
+And it scientists reading the output of the quantum
+06:48
+computers are left with amplitudes leading to the right
+06:51
+answer of whatever problem they're trying to solve.
+06:53
+So what does a quantum computer look like in the real
+06:56
+world? The quantum computers developed by companies such as
+06:59
+Google, IBM and Rigetti were all made using a process
+07:02
+called superconducting
+07:04
+And this is where you have a chip the size of an ordinary
+07:08
+computer chip and you have little coils of wire in the
+07:13
+chip, you know, which are actually quite enormous by the
+07:16
+standards of cubits.
+07:17
+There are, you know, nearly big enough to see with the
+07:19
+naked eye. But you can have two different quantum states of
+07:24
+current that are flowing through these coils that
+07:27
+correspond to a zero or a one.
+07:30
+And of course, you can also have super positions of the
+07:33
+two. Now the coil can interact with each other via
+07:37
+something called Josef's injunctions.
+07:39
+So they're laid out in roughly a rectangular array and the
+07:43
+nearby ones can talk to each other and thereby generate
+07:48
+these very complicated states, what we call entangled
+07:50
+states, which is one of the essentials of quantum computing
+07:55
+and the way that the cubists interact with each other is
+07:58
+fully programmable.
+07:59
+OK. So you can send electrical signals to the chip to say
+08:04
+which cube it should interact with each other ones at which
+08:07
+time. Now the order for this to work, the whole chip is
+08:12
+placed in that evolution refrigerator.
+08:14
+That's the size of a closet roughly.
+08:17
+And the calls it do about one hundredth of a degree above
+08:19
+absolute zero. That's where you get the superconductivity
+08:22
+that allows these bits to briefly behave as cubits.
+08:32
+And IBM's research lab in Yorktown Heights, New York, the
+08:35
+big tech company, houses several quantum computers already
+08:38
+hooked up to the cloud. Corporate clients such as Goldman
+08:41
+Sachs and JP Morgan are part of IBM's Q Network, where they
+08:45
+can experiment with the quantum machines and their
+08:47
+programming language.
+08:49
+So far, it's a way for companies to get used to quantum
+08:51
+computing rather than make money from it.
+08:53
+Quantum computers need exponentially more cubits before
+08:56
+they start doing anything useful.
+08:58
+IBM recently unveiled a fifty three cubic computer the same
+09:01
+size as Google's sycamore processor.
+09:03
+We think we're actually going to need tens of thousands,
+09:07
+hundreds of thousands of qubits to get to real business
+09:10
+problems. So you can see quite a lot of advances and
+09:13
+doubling every year or perhaps even a little faster is what
+09:16
+we need to get us there. That's why it's 10 years out, at
+09:19
+least.
+09:21
+Quantum computing would need to see some big advances
+09:22
+between then and now, bigger advances than what occurred
+09:25
+during the timeline of classical computing and Moore's Law.
+09:29
+Oh, we need better than Moore's Law.
+09:30
+Moore's Law is doubling every two years.
+09:32
+We're talking doubling every year.
+09:34
+And occasionally some really big jumps.
+09:36
+So what's quantum computers become useful?
+09:38
+What can they do? Scientists first came up with the idea
+09:41
+for quantum computers as a way to better simulate quantum
+09:44
+mechanics. That's still the main purpose for them.
+09:47
+And it also holds the most moneymaking potential.
+09:49
+So one example is the caffeine molecule.
+09:53
+Now, if you're like me, you've probably ingested billions
+09:58
+or trillions of. Caffeine molecules so far today.
+10:01
+Now, if computers are really that good, really that
+10:05
+powerful. We have these these tremendous supercomputers
+10:08
+that are out there. We should be able to really take a
+10:11
+molecule and represented exactly in a computer.
+10:15
+And this would be great for many fields, health care,
+10:18
+pharmaceuticals, creating new materials, creating new
+10:21
+flavorings anywhere where molecules are in play.
+10:25
+So if we just start with this basic idea of caffeine, it
+10:28
+turns out it's absolutely impossible to represent one
+10:32
+simple little caffeine molecule in a classical computer
+10:36
+because the amount of information you would need to
+10:39
+represent it, the number of zeros and ones you would need
+10:43
+is around ten to forty eight.
+10:46
+Now, that's a big number. That's one with forty eight zeros
+10:49
+following it. The number of atoms in the earth are about 10
+10:55
+to 100 times that number.
+10:57
+So in the worst case, one caffeine molecule could use 10
+11:02
+percent of all the atoms in the earth just for storage.
+11:06
+That's never going to happen.
+11:08
+However, if we have a quantum computer with one hundred and
+11:11
+sixty cubits and this is a model of a 50 kubert machine
+11:15
+behind me, you can kind of figure, well, if we make good
+11:18
+progress, eventually we'll get up to 160 good cubits.
+11:23
+It looks like we'll be able to do something with caffeine,
+11:27
+a quantum computer, and it's never going to be possible.
+11:30
+Classical computer and other potential use comes from Wall
+11:33
+Street. Complex risk analysis and economic forecasting.
+11:37
+Quantum computing also has big potential for portfolio
+11:39
+optimization. Perhaps the biggest business opportunity out
+11:43
+of quantum computing in the short term is simply preparing
+11:45
+for the widespread use of them.
+11:47
+Companies and governments are already attempting to quantum
+11:50
+proof their most sensitive data and secrets.
+11:53
+In 1994, a scientist at Bell Labs named Peter Shaw came up
+11:57
+with an algorithm that proved quantum computers could
+12:00
+factor huge numbers much more quickly than their classical
+12:03
+counterparts. That also means quantum computers is powerful
+12:06
+and efficient enough could theoretically break RSA
+12:09
+encryption. RSA is the type of encryption that underpins
+12:12
+the entire internet.
+12:14
+Quantum computers, the way they're built now, would need
+12:16
+millions of cubits to crack RSA cryptography.
+12:19
+But that milestone could be 20 or 30 years away and
+12:22
+governments and companies are beginning to get ready for
+12:25
+it. For a lot of people, that doesn't matter.
+12:27
+But for example, for health records, if health records to
+12:30
+be opened up that could compromise all kinds of things.
+12:32
+Government communications. Banking records.
+12:34
+Sometimes even banking records from decades ago contain
+12:36
+important information that you don't want exposed.
+12:40
+But the problem we've got is we don't really know when
+12:43
+we'll be able to do this or even if we'll ever build one
+12:46
+big enough to do this.
+12:48
+But what we do now, is that if you don't update your
+12:50
+cryptography now, all the messages you send over the next
+12:53
+few years and the ones in history could potentially be
+12:57
+read. What this means, for example, is if you're a Cisco
+13:02
+selling networking equipment, you're going to offer
+13:04
+quantum-safe encryption as an option in the very near
+13:08
+future. Becayse even though it doesn't look like you need
+13:10
+it right away. If your product doesn't have it and a
+13:13
+competitor does, guess which product gets bought?
+13:23
+One big issue facing quantum computing, other than
+13:25
+increasing the number of cubits while keeping things
+13:27
+stable, is that no one actually knows the best way to build
+13:30
+a quantum computer. Yet the Quantum computers, a Google of
+13:33
+IBM and other companies show off are very much still
+13:37
+experiments. There's also a big education gap.
+13:40
+Not many people are studying quantum computing yet.
+13:42
+China is pouring billions into quantum computing education,
+13:46
+and the U.S. Congress passed a law in 2018 called the
+13:48
+National Quantum Initiative Act in order to help catch up
+13:52
+watching people get rid of him.
+13:56
+Which means that you want to invest in them now.
+13:58
+You want to be hiring people with quantum computing
+14:00
+knowledge. Not necessarily to do quantum computing, but
+14:03
+because you want that intelligence in your organisation so
+14:07
+you can take advantage of it when it shows up.
+14:10
+Now China, with its promised $10 billion in it, is really
+14:13
+upping stakes in terms of the number of Chinese quantum
+14:16
+physics PhDs that are going to start appearing.
+14:19
+And you know if that hair restoration or life extension
+14:22
+drug happens to be property of the Chinese government, what
+14:25
+does that do to the world economy?
+14:27
+That's much more powerful than making war Other experts
+14:34
+have compared Google's announcement to Sputnik, the Soviet
+14:37
+satellite launched into orbit in 1957.
+14:40
+The beach ball sized satellite was the first manmade object
+14:43
+to orbit the Earth. But Sputnik didn't really do anything
+14:47
+useful other than prove launching something into space was
+14:50
+possible. Many people are surprised that where exactly we
+14:56
+are. For those who are just getting started, they like to
+15:00
+make noise about vacuum tubes and Sputnik and things like
+15:04
+this. But let me give you some numbers.
+15:08
+IBM has had quantum computers on the cloud for three and a
+15:11
+half years since May of 2016.
+15:15
+We're not in any sort of Sputnik error.
+15:18
+We're not landing on the moon.
+15:21
+But for those of you who like space history, I think we're
+15:23
+probably well into Mercury or Gemini.

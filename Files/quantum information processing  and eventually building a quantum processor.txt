@@ -1,0 +1,26 @@
+quantum information processing  and eventually building a quantum processor 
+
+(The Bloch Sphere
+A fantastic feature of the two-level system is the ability to express the states as 
+geometrical vectors on a sphere of radius 1, known as the Bloch sphere.)
+
+first of all we need qubits and  quantum  systems like two level quantum systems 
+and we need to control these qubits using single qubit control gates 
+we need a lot of qubits to increase the processing capabilities, when using more qubits 
+we need them to interact with each other so we use two qubit gates  
+and lastly we need to readout the information processed from the qubits,
+which are 0s and 1's  so we use qubit readout 
+
+this has many challenges 
+first we have to have gates which are super fast 
+readout part should be super efficent with less error rate and more fidelity and should be 
+strongly coupled to our qubits 
+and the qubits should have long coherence i.e the 0's and 1's should be sharp and have stay for long time 
+
+
+
+
+
+
+
+

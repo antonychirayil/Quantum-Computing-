@@ -1,0 +1,47 @@
+/*.dropdown{
+	position:relative; 
+	display:inline-block;
+}*/
+.solosegment-dropdown-content{
+	display:none;
+	position: absolute;
+	width:95%;
+	overflow:auto;
+	z-index: 1000;
+	cursor: default;
+	padding: 0;
+	list-style: none;
+	background-color: #ffffff;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+/* Navbar searchbar */
+div.search-nav > div.search-box > ul.solosegment-dropdown-content{
+	margin-top: 52px;
+}
+
+/* Hero section of main page */
+div.hero-content > div.search-box > ul.solosegment-dropdown-content{
+	margin-top: 52px;
+}
+
+/* SERP main area */
+form > div > div.search-box>ul.solosegment-dropdown-content{
+	margin-top: 2px;
+}
+
+.solosegment-dropdown-content > li { 
+	padding: 3px 20px;
+	font-size: 18px !important;
+	color: black;
+	text-align: left;
+}
+
+.solosegment-dropdown-content > li.highlight {
+	background-color: #DDD;
+}

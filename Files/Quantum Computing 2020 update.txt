@@ -1,0 +1,623 @@
+
+00:34
+with a brief summary of what quantum
+00:36
+computing
+00:37
+is all about
+00:43
+the microprocessors in conventional or
+00:46
+classical computers are built from
+00:48
+billions of transistors that are turned
+00:50
+on
+00:50
+or off to represent a value of either
+00:52
+one or
+00:53
+zero in turn this allows classical
+00:56
+computers to store
+00:58
+and process data using binary digits or
+01:00
+bits
+01:02
+in contrast quantum computers process
+01:05
+information
+01:06
+using quantum bits or qubits
+01:09
+these can be created in many different
+01:11
+ways
+01:12
+for example using superconducting
+01:14
+electronic circuits
+01:15
+or by trapping ionized atoms as i'll
+01:18
+discuss later
+01:18
+in the video unlike
+01:22
+classical bits qubits can exist in more
+01:24
+than one state
+01:25
+or superposition at exactly the same
+01:28
+point in time
+01:29
+this allows a qubit to assume a value of
+01:32
+one
+01:32
+or zero or both of these numbers
+01:35
+simultaneously
+01:36
+in turn this potentially enables a
+01:38
+quantum computer
+01:40
+to process a far higher number of data
+01:41
+possibilities than a classical computer
+01:44
+indeed in theory quantum computers will
+01:47
+be able to accomplish
+01:48
+tasks which are impossible to perform
+01:50
+using conventional hardware
+01:58
+today quantum computing remains in the
+02:00
+research
+02:01
+phase with all quantum hardware created
+02:04
+for experimental purposes
+02:06
+this said many traditional computing
+02:08
+companies are now developing
+02:10
+and operating quantum computers with key
+02:12
+players
+02:13
+including ibm google alibaba
+02:16
+microsoft intel and honeywell
+02:20
+there are also a whole host of pure play
+02:22
+hardware and software startups
+02:24
+including one qubit cqc
+02:27
+d-wave systems inq qc
+02:30
+ware q-simulate quantum circuits
+02:33
+rocco rigetti zenodu and zapata
+02:37
+you can find out more about what these
+02:39
+companies are doing on the quantum
+02:40
+computing page
+02:41
+on explainingcomputers.com
+02:46
+quantum computers will only become a
+02:48
+viable commercial technology when they
+02:50
+can perform useful calculations that
+02:52
+cannot be executed
+02:53
+on a classical computer back in 2012
+02:57
+professor john preskill coins the term
+02:59
+quantum supremacy to define this concept
+03:02
+writing that in the era of quantum
+03:04
+supremacy we will be able to perform
+03:06
+tasks with controlled quantum systems
+03:08
+going beyond what can be achieved with
+03:10
+ordinary digital computers
+03:14
+in october 2019 google claimed to have
+03:17
+achieved
+03:18
+quantum supremacy as it reported a team
+03:21
+of google scientists had used a quantum
+03:23
+processor called sycamore
+03:25
+to sample the output of a pseudo-random
+03:27
+quantum circuit
+03:29
+sycamore took about 200 seconds to
+03:31
+sample one
+03:32
+instance of the circuit a million times
+03:35
+in comparison the google team estimated
+03:38
+that a classical supercomputer would
+03:40
+take about 10 000 years
+03:42
+to perform the same calculations as the
+03:44
+team went on to conclude
+03:46
+quantum processors based on
+03:47
+superconducting qubits
+03:49
+can now perform computations beyond the
+03:51
+reach of the fastest classical
+03:53
+supercomputers available today
+03:55
+to our knowledge this experiment marks
+03:57
+the first computation
+03:58
+that can be performed only on a quantum
+04:01
+processor
+04:02
+quantum processors have thus reached the
+04:04
+regime of quantum supremacy
+04:08
+the google announcement was big news but
+04:11
+soon controversial
+04:12
+not least ibm published a blog post in
+04:15
+which they stated that the computations
+04:17
+in google's experiment
+04:18
+could be undertaken on a classical
+04:20
+computer in two and a half
+04:21
+days rather than ten thousand years
+04:24
+as ibm went on to contend because the
+04:27
+original meaning of the term quantum
+04:29
+supremacy
+04:30
+as proposed by john prescott in 2012 was
+04:33
+to describe the point where quantum
+04:34
+computers
+04:35
+can do things that classical computers
+04:37
+can't this threshold has not been met
+04:42
+ibm and google are rivals who have
+04:44
+created quantum computers
+04:46
+based on the same kind of
+04:47
+superconducting josephson junction
+04:49
+qubits it's therefore perhaps not
+04:51
+surprising that ibm disputed
+04:54
+google's achievement however and more
+04:57
+broadly
+04:57
+ibm and some other quantum computing
+05:00
+specialists
+05:01
+increasingly question the importance of
+05:03
+the quantum supremacy concept
+05:05
+not least they are concerned that future
+05:08
+experiments which demonstrate quantum
+05:09
+supremacy
+05:10
+may involve tasks with no useful or
+05:13
+commercial application
+05:20
+whilst the quantum supremacy debate has
+05:22
+raged the last 12
+05:24
+months have seen a notable expansion of
+05:26
+cloud-based quantum computing
+05:28
+or quantum computing as a service
+05:31
+the birth of qcaas dates back to may
+05:34
+2016
+05:35
+when ibm launched the ibmq experience
+05:38
+to make a quantum computer available
+05:40
+over the internet
+05:42
+just under two years later chinese
+05:44
+e-commerce giant alibaba
+05:46
+followed suit with its superconducting
+05:48
+quantum computing
+05:49
+cloud this was developed with the
+05:52
+chinese academy of sciences
+05:54
+and like ibm q allows users to run
+05:57
+quantum programs in the cloud
+05:58
+and download the results
+06:01
+in october 2018 canadian quantum
+06:04
+computing pioneer d-wave systems
+06:06
+also made available a service called
+06:08
+leap to provide cloud access to its
+06:10
+quantum computing hardware
+06:12
+and in january 2019 rival quantum
+06:16
+computing pureplay riggetti
+06:17
+launched its quantum cloud services or
+06:19
+qcs platform
+06:23
+the big quantum cloud news of the past
+06:25
+12 months
+06:26
+has been the entry of amazon and
+06:28
+microsoft as new market players
+06:31
+amazon's qc ais offerings were announced
+06:34
+on december
+06:35
+2nd 2019 and include an aws solution
+06:39
+called amazon bracket that allows
+06:41
+scientists researchers and developers to
+06:43
+begin experimenting with quantum
+06:44
+computers from multiple hardware
+06:46
+providers
+06:47
+specifically customers can access
+06:49
+hardware from d-wave systems
+06:52
+iron q and righty which means they can
+06:55
+experiment with quantum computers based
+06:57
+on three different
+06:58
+qubit technologies
+07:01
+in addition to bracket amazon also
+07:03
+launched the amazon quantum solutions
+07:06
+lab
+07:07
+this is intended to help companies to
+07:09
+get ready for quantum computing by
+07:11
+allowing them to work with leading
+07:13
+pioneers
+07:14
+so a key thing that amazon is doing with
+07:17
+its quantum computing offerings
+07:19
+is to act as a broker in the cloud
+07:23
+on may 19 2020 microsoft entered the
+07:26
+fray
+07:27
+when it announced azure quantum whilst
+07:30
+microsoft is working with several
+07:31
+universities to develop its own quantum
+07:34
+hardware
+07:34
+for its current cloud offering it's
+07:36
+adopted the same strategy as
+07:38
+amazon to partner with those who already
+07:40
+have quantum hardware and software
+07:42
+solutions available this allows
+07:44
+microsoft to offer its azure quantum
+07:46
+stack
+07:47
+which it describes as an open cloud
+07:49
+ecosystem
+07:50
+offering access to a diverse set of
+07:53
+quantum resources
+07:54
+including pre-built solutions quantum
+07:56
+development tools such as simulators and
+07:58
+resource estimation
+08:00
+tools accelerated classical hardware and
+08:02
+a variety
+08:03
+of quantum hardware
+08:11
+one of the developments that's most
+08:13
+captured my own attention in the past 12
+08:15
+months
+08:15
+has been progress in trapped iron
+08:18
+quantum computing
+08:20
+key players here include the university
+08:22
+of oxford as well as a company called
+08:24
+iron
+08:24
+q but in october 2019 secured 55 million
+08:28
+dollars of
+08:29
+funding the technology page of the inq
+08:32
+website
+08:33
+explains what trapped iron quantum
+08:35
+computing is all about
+08:36
+and really is an excellent learning
+08:38
+resource
+08:40
+in simple terms trapped iron quantum
+08:43
+computing
+08:44
+creates each qubit by removing an
+08:45
+electron from an atom
+08:47
+in order to turn it into an ion with a
+08:49
+positive electrical charge
+08:52
+a chip known as a linear ion trap is
+08:55
+then used to hold chains of ion qubits
+08:57
+in 3d space where they can be
+08:59
+manipulated and read
+09:01
+using lasers all of this is extremely
+09:04
+difficult to achieve and control
+09:06
+not least because the qubits need to be
+09:08
+super cooled to almost absolute zero
+09:10
+as well as being isolated in a very high
+09:13
+quality
+09:14
+vacuum chamber
+09:17
+in addition to iron q another key player
+09:20
+is
+09:20
+honeywell who in june 2020 announced
+09:23
+that it had used trapped iron technology
+09:25
+to create the world's highest
+09:26
+performance quantum computer
+09:29
+clearly others may take a different view
+09:32
+but
+09:33
+regardless this is another important
+09:35
+development particularly
+09:36
+as honeywell reports that jpmorgan chase
+09:40
+is already experimenting with its system
+09:42
+to develop quantum financial services
+09:44
+software
+09:45
+including fraud detection and ai trading
+09:48
+applications
+09:54
+always when i make a video about quantum
+09:57
+computing
+09:58
+i get questions about how quantum
+10:00
+computers are programmed
+10:02
+at present this takes place using a
+10:04
+classical computer as a control device
+10:06
+with the languages used including python
+10:10
+an explanation of exactly what is
+10:12
+involved is well beyond the scope of
+10:14
+this video
+10:15
+but if you want to learn more and
+10:17
+actually experiment
+10:18
+go to the ibm quantum computing website
+10:21
+and click on
+10:22
+for developers next select try kiskit
+10:25
+which will allow you to experiment with
+10:27
+this open source development
+10:30
+environment one great
+10:33
+but still quite complex example shows
+10:35
+how it is possible to estimate the value
+10:37
+of pi
+10:38
+using a quantum phase estimation
+10:40
+algorithm
+10:41
+as you can see the python code begins by
+10:44
+importing relevant libraries
+10:46
+before progressing using commands that
+10:48
+will be pretty familiar to those with
+10:50
+some programming background
+10:52
+absolutely this is complex and something
+10:54
+you need to get your head around
+10:57
+but what i hope it makes clear is that
+10:59
+quantum computing is not quite so
+11:01
+removed from traditional computing as
+11:03
+many people believe
+11:10
+quantum computing is yet to become a
+11:13
+commercial
+11:14
+reality this said as we've seen in this
+11:17
+video
+11:17
+significant progress continues to be
+11:20
+made and
+11:21
+i remain confident that some kind of
+11:23
+quantum hardware will find useful
+11:25
+application
+11:26
+in the second half of this decade
+11:30
+but now that's it for another video if
+11:32
+you've enjoyed
+11:33
+ucd please press that like button if you
+11:35
+haven't subscribed
+11:37
+please subscribe and i hope to talk to
+11:39
+you again
+11:40
+very soon
+11:43
+[Music]
+11:58
+you

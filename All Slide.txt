@@ -1,0 +1,299 @@
+my seminar topic is on superconducting quantum processor 
+
+SLIDE 3
+
+Eventhough with the power of today’s supercomputers, many complex computing problems
+
+cannot be addressed by conventional systems.
+
+so .........Quantum computing is the next frontier in computing field , and it provides an entirely 
+
+new approach to solving the world’s most difficult challenges.
+
+
+Eventhough , that this concept was presented it was 30 years before
+
+it’s still considered as unknown and many subjects are open for research.
+
+
+[look at the slide]
+
+
+SLIDE 4
+
+Coming on to the history behind the quantum computing 
+
+So,it was Richard Feyman who proposed the idea of building machines with quantum mechanics
+
+and as u can see, there are three other figures who helped in devising famous algorithms
+
+like Shors algorithm, Grovers algorithm and Deutsch algorithm.
+
+Lov Grover was a computer scientist and Shor was a mathematicians and Deutsch was a physicist
+
+
+SLIDE 5
+as we are talking about quantum computer we need to know what a quantum computers and 
+a qubit means ...........
+
+As we know a classical computer encodes information in n bits and each bit 
+can represent 0 or 1 which acts like an on-off switch
+
+so in a quantum computer we use two principles 
+Superposition and Entanglement
+
+Superposition means that each qubit can represent a zero or one or both at the 
+same time 
+
+and Entanglement happens when two qubits in a superposition are correlated
+with one another meaning the state of one whether it's a 0  or 1 or both 
+depends on the state of another qubit  
+
+so we can say that a Qubit can be  0 or 1 or 0 and 1 at the same time
+
+SLIDE 6 - Quantum Computer  Performance
+
+now, when we talk about the the classical computer if it has n bit only 2*n states are  possible 
+while a qubit have the power to represent 2 to the power of n  states and perform parallel 
+operations on all those states at once 
+this means that every time you add just one more qubit to a quantum computer 
+the number of states increases exponentially and examine we can imagine what a  50 qubit quantum machine 
+can do
+
+ 
+SLIDE 7 Technologies for implementing Quantum Computing 
+[look at the slide] 
+
+SLIDE 8
+
+superconducting qubits are solid state electrical circuits which uses superconducting elements  like strontium and niobium
+So why do we use superconducting qubits:
+
+1. High designability means that it has 
+Different types of qubits, such as charge qubits, flux qubits, and phase qubits, can be designed. 
+
+2. Scalability.
+ The preparation of superconducting qubits is based on the existing semiconductor 
+microfabrication process.
+
+3. Easy to couple. The circuity nature of the superconducting qubit system makes 
+  easy to couple multiple qubits together. 
+
+4. Easy to control. 
+like for eg for reading out a qubit we use microwave resonators.
+
+
+SLIDE 9
+
+Superconducting qubits generally consist of superconducting electrodes, or islands, 
+that are interconnected by Josephson junctions.
+
+A Josephson junction is a quantum mechanical device which is made of
+two superconducting electrodes separated by a barrier
+
+Here we have Superconducting qubit circuit diagram. 
+SO in
+fg (a) Charge qubit composed of a Josephson junction and a capacitor. 
+Adjusting the voltage Vg can control the number of Cooper pairs.
+
+ fig (b) Flux qubit. L is the loop inductance. 
+Changing the bias flux  can adjust the energy level structure of the qubit. 
+
+fig (c) Phase qubit are produced by Adjusting the bias current 
+ 
+
+SLIDE 10
+
+The Transmon is the superconducting qubit. 
+and there are many types of Transmon-type qubit like Transmon,  Xmon, Gmon, 3D Transmon etc., 
+
+Transmon is currently the most popular superconducting qubit 
+due to its simplicity and the flexibility of quantum electrodynamic Architecture
+
+In its simplest form, the Tansmon consists of two islands interconnected by one junction and 
+ by looking at the fig. The inductance is provided by a Josephson junction and not by a typical coil inductor. 
+
+
+
+
+SLIDE 11
+[look at the silde]
+
+qubits lifetime 
+
+SLIDE 12 Qubit  Control using Quantum Logic Gates
+so how do we control the qubit
+and what kind of  gate used in the quantum processor 
+
+Quantum logic gates are represented by unitary matrices. 
+Quantum Gates are reversible
+Quantum states are typically represented by "kets", from a mathematical notation known as bra-ket.
+The vector representation of a single qubit is:
+
+
+Here, 𝜗_0and 𝜗_1  are the complex probability amplitudes of the qubit. These values determine 
+the probability of measuring a 0 or a 1, when measuring the state of the qubit. See measurement below for details.
+The value zero is represented by the ket | 0 ⟩ = [ 1    0 ] and the value one is represented by the ket | 1 ⟩ = [ 0   1 ]
+
+for combining quantum states,or for more than one qubit we use tensor products .
+ The tensor product is denoted by the symbol ⊗
+The vector representation of two qubits is give below
+
+SLIDE 13-Gates For Single qubit, Two qubits and Three Qubits
+
+[look at the slide]
+representation of the two-level system as states 
+ on a sphere is a known as the Bloch sphere.)
+.The north and south poles of the Bloch sphere are typically chosen to correspond to the standard
+ basis vectors |0⟩ and |1⟩ respectively, which in turn might correspond
+ e.g. to the spin-up and spin-down states of an electron. This choice is arbitrary, however.
+The points on the surface of the sphere correspond to the pure states of the system, 
+whereas the interior points correspond to the mixed states.
+
+
+SLIDE 14-Cross-Resonance Gate 
+
+for my topic we use the cross resonance gate 
+
+The cross-resonance gate was first implemented in 2011
+
+The cross-resonance gate is an entangling gate for fixed frequency superconducting qubits,
+ which is implemented by applying a microwave drive to a system of two coupled qubits
+
+
+CNOT gate,so-called two-qubit entangling gate,is used here 
+
+Typical pulse duration : 200-500ns 
+Typical gate fidilities: 96-99%
+
+
+
+SLIDE 15-Quantum Processing Unit : Basics
+here we are discussing about quantum information processing and eventually building 
+a quantum processor 
+
+A fantastic feature of the two-level system is the ability to express the states as 
+geometrical vectors on a sphere of radius 1, known as the Bloch sphere.)
+
+first of all we need qubits and  quantum  systems like two level quantum systems 
+and we need to control these qubits using single qubit control gates 
+we need a lot of qubits to increase the processing capabilities, when using more qubits 
+we need them to interact with each other so we use two qubit gates  
+and lastly we need to readout the information processed from the qubits,
+which are 0s and 1's  so we use qubit readout 
+
+this has many challenges 
+first we have to have use gates which are super fast 
+readout part should be super efficent with less error rate and more fidelity and should be 
+strongly coupled to other qubits 
+and the qubits should have long coherence i.e the 0's and 1's should be sharp and have stay for long time 
+
+
+SLIDE 16 [look at the slide]
+
+SLIDE 17 Physical quibits and frequency 
+
+ 
+
+For a typical qubit design with effective operations the frequency should be about about 
+5GHz and 4.66GHz, respectively. 
+
+
+SLIDE 18 Qubit Layout 
+
+The superconducting physical qubits are connected on a 2-dimensional planar substrate. 
+
+   For example:
+IBM’s 16-qubit and 20-qubit chips place their qubits on the nodes of 2x8 and 4x5 lattices, 
+respectively. 
+Google’s 72-qubit chip has a 11x12 lattice
+
+SLIDE 19 Qubit Connection 
+
+To enable two-qubit gates between two physical qubits, resonators, also known as qubit buses, are employed to connect nearby qubits . 
+
+For example,
+Figure shows two types of commonly used buses. The first one is a 2-qubit bus connecting two physical qubits.
+ The second one is a 4-qubit bus, which connects four physical qubits in a square together. 
+The coupling graphs of these two types of buses are shown on the right. Compared with a 2-qubit bus, 4-qubit bus support two-qubit gates on, not only the four qubit pairs on the edges but also two qubit pairs on the diagonals.
+
+
+SLIDE 20 Qubit Readout
+
+qubit readout is one of the most important process because when a qubit is release it should 
+ be read immediately because of its liftime
+Fast and high-fidelity qubit readout is crucial in quantum computing.
+There are several different readout techniques for superconducting qubit, 
+such as charge measurement,flux measurement  inductance measurement, etc.
+
+The dispersive readout is the currently most common readout technique in the circuit QED architecture,
+ which i will briefly introduce in the next section.
+
+
+SLIDE 21 Dispersive Readout
+
+Dispersive readout is to obtain the qubit state information through the readout resonator. 
+
+The qubit circuit is coupled to the readout resonator through capacitance or inductance, and 
+the state of the qubit is detected by measuring the transmission coefficient of the readout resonator. 
+
+so the measurement the qubit and the readout resonator form the specific energy level called 
+Hamiltonian of the Jaynes-Cummings model
+
+SLIDE 22 Quantum Processor 
+
+
+SLIDE 23 
+
+SLIDE 24
+
+SLIDE 25
+
+so  for Maintaining  a superconducting quantum computer it should be kept under an extremely low temperature 
+This dilution refrigerator has a system of pipes that contain a mixture of two helium isotopes 
+It is cooled to this degree by a continous cylce
+SLIDE 26 
+
+SLIDE 27 D- wave 2000Q
+so D-wave is a candian company 
+The D-Wave QPU is built of qubits using niobium
+D-Wave systems operate at less than 15 millikelvin, approximately 180 times colder than interstellar space. 
+ niobium becomes a superconductor and exhibits quantum mechanical effects Below temperatures of 9.2 kelvin, 
+ 
+like the same in IBMs, Qubits are connected via couplers, which are also superconducting loops. 
+so it uses 128,000 Josephson junctions, which makes the D-Wave 2000Q QPU 
+by far the most complex superconducting integrated circuit ever built. 
+Unlike the CPUs of classical computers, 
+D-Wave’s superconducting QPU dissipates negligible amounts of heat during computation.
+ The D-Wave system consumes less than 25 kW of power, most of which goes towards operating
+ the cooling and front-end servers. 
+
+SLIDE 28 
+
+SLIDE 29 
+
+SLIDE 30 
+
+SLIDE 31
+
+
+
+C-shunt flux qubit
+it is capacitor shunt flux qubit ---- advantage it releases less charge noise compare to transmon
+So charge noise creates decoherence which means it the qubit wont stay for a long time
+
+Fluxonium
+series array
+of large-capacitance tunnel junctions are connected in parallel
+with a small junction
+
+reduces charge noise 
+
+0-pi quibit 
+0- qubit is designed with a symmetrical circuit
+to obtain an interleaved double potential well
+
+
+
+Hardman Gate 
+combination rotation of 90 degree about the y axis and 180 about the rotation at 180 in the z axis in the bloch sphere 

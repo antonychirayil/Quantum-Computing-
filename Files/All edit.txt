@@ -1,0 +1,37 @@
+the microprocessors in conventional or classical computers are built from billions of transistors that are turned on or off to represent a value of either
+one or zero in turn this allows classical computers to store and process data using binary digits or bits in contrast quantum computers process
+information using quantum bits or qubits these can be created in many different for example using superconducting electronic circuits
+
+
+classical computers encode information in bits and each bit can represent a 0 or a 1 these zeros and ones act as on-off switches that ultimately
+translate into compute functions to perform a simple calculation like solving a maze a classical computerwould test each possible route one at a
+time to find the correct one just as classical computers have bits quantum computers have cubits cubits however make use of two key principles of 
+quantum physics superposition and entanglement superposition means that each qubit can represent a zero a one or both at the same time and entanglement
+happens when two qubits in a superposition are correlated with one another meaning the state of one whether it's a 0 a 1 or both depends on the state of
+another using these two principles qubits can act as a much more sophisticated version of switches helping quantum computers solve difficult problems 
+that are virtually impossible using classical computers to illustrate how this makes quantum computers more powerful
+
+let's look at some numbers take a classical n bit computer with n representing the number of bits it can represent and examine only one system state at a time an N
+cubed computer however would have the power to represent 2 to the power of n system states and perform parallel operations on all those states at once
+this means that every time you add just one more qubit to a quantum computer the number of states that can represent and examine the so a 50 cubit quantum machine 
+could examine two to the power of 50 states at once this exponential increase in power together with the entanglement of qubits is what allows quantum computers to
+solve certain problems so much more efficiently while a classical computer solves a problem like the maze by testing each possible route one at a time a quantum computer uses its
+entangled quantum state to find the correct route quicker with far fewer calculations think of it this way technologies that currently run on classical computers can expertly find
+patterns and insights buried in vast amounts of existing data but quantum computers will deliver solutions where patterns cannot be seen because sufficient data does not exist or the
+possibilities for discovering an optimal answer are too enormous to ever be processed by a classical computer
+
+
+High designability. Superconducting qubit system has high designability. 
+Different types of qubits, such as charge qubits, flux qubits, and phase qubits, can be designed.
+
+Scalability. The preparation of superconducting qubits is based on the existing semiconductor microfabrication process. High-quality devices can be prepared by leveraging advanced chip-making technologies, which is good for manufacturing and scalability.
+
+Easy to couple. The circuit nature of the superconducting qubit system makes it relatively easy to couple multiple qubits together. In general, superconducting qubits can be coupledby capacitance or inductance.
+
+Easy to control. The operation and measurement of superconducting qubits compatible with microwave control and operability. Thus, commercial microwave devices and equipment can be used in superconducting quantum computing experiments.
+
+
+
+
+Quantum Computing with the IBM Quantum Experience with the Quantum Information Software Toolkit (QISKit)
+Nick Bronn,Research Staff Member,IBM T.J. Watson Research Center,ACM Poughkeepsie Monthly Meeting, January 2018 
